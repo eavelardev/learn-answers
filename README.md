@@ -1,12 +1,12 @@
 # learn-answers
 Program to learn the answers of a set of questions
 
-I think that one of the best ways to learn new things is through repetition, for that reason I did this program to learn the answers of a set of questions in a fun way, importing that information from a JSON.
+I think that one of the best ways to learn new things is through repetition, for that reason I did this program to learn the answers of a set of questions in a fun way, importing that information from a JSON file.
 
 ## Using
 
 ```
-python learn_answers.py --file <my source code file>
+python learn_answers.py --file <my json file>
 ```
 
 example:
