@@ -112,5 +112,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         pass
 
-    print('\nTraining finished1') 
+    print('\nTraining finished') 
     curses.endwin()
