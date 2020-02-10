@@ -95,7 +95,7 @@ def main():
                     correct = True
                     break
 
-                if restart_question:
+                if i == len(answer_words) - 1 or restart_question:
                     break
 
                 in_word, state = get_word()
