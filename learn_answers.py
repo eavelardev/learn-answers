@@ -2,8 +2,6 @@ import argparse
 import json
 import curses
 
-x = y = 0
-
 def main():
     parser = argparse.ArgumentParser(description='Learn answers.')
 
