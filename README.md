@@ -14,5 +14,3 @@ example:
 ```
 python learn_answers.py --file handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
 ```
-
-Bug: The program crash when you use a small terminal size.

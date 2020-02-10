@@ -46,32 +46,38 @@ def main():
             restart_question = False
             total_chrs = 0
             last_x = 0
-            for i in range(len(answer_words)):
 
+            for i in range(len(answer_words)):
                 if in_word != answer_words[i]:
                     win.addstr('\n')
                     while True:
                         if correct is None:
                             for j in range(len(answer_words)):
                                 if j == i:
-                                    win.addstr(answer_words[j], curses.A_STANDOUT)
+                                    win.addstr(
+                                        answer_words[j], curses.A_STANDOUT)
                                 else:
-                                    win.addstr(answer_words[j], curses.A_UNDERLINE)
+                                    win.addstr(
+                                        answer_words[j], curses.A_UNDERLINE)
 
-                                if j != len(answer_words) -1:
-                                        win.addstr(' ', curses.A_UNDERLINE)
+                                if j != len(answer_words) - 1:
+                                    win.addstr(' ', curses.A_UNDERLINE)
 
                             win.addstr('\n')
                             correct = False
                         else:
                             win.addstr(' ' * (total_chrs % ncols))
-                            win.addstr(answer_words[i] + '\n', curses.A_STANDOUT)
+                            win.addstr(
+                                answer_words[i] + '\n', curses.A_STANDOUT)
 
-                        win.addstr(answer[total_chrs - last_x : total_chrs])
-                        
-                        _, last_x = win.getyx()
+                        win.addstr(answer[total_chrs - last_x: total_chrs])
+
+                        last_y, last_x = win.getyx()
+                        if last_y > nlines - 3:
+                            restart_question = True
+                            break
+
                         in_word, state = get_word()
-
                         if state == '\n':
                             restart_question = True
                             break
@@ -92,7 +98,9 @@ def main():
                 if i == len(answer_words) - 1 or restart_question:
                     break
 
-                _, last_x = win.getyx()
+                last_y, last_x = win.getyx()
+                if last_y > nlines - 3:
+                    break
                 in_word, state = get_word()
 
                 if state == '\n' and i < len(answer_words) - 2:
@@ -108,5 +116,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         pass
 
-    print('\nTraining finished') 
+    print('\nTraining finished')
     curses.endwin()
