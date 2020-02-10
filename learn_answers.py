@@ -18,19 +18,8 @@ def main():
     f = args.file
     data = json.load(f)
     f.close()
-    curses.initscr()
     win = curses.initscr()
-
-    def win_print(value):
-        global x, y
-        win.addstr(y, x, value)
-        x += len(value)
-
-    def win_println(value):
-        win_print(value)
-        global x, y
-        x = 0
-        y += 1
+    # curses.start_color()
 
     def get_word():
         word = ''
@@ -44,13 +33,11 @@ def main():
     for question in data:
         while True:
             win.clear()
-            global x, y
-            x = y = 0
-            win_println(clo + question['question'])
+            win.addstr(clo + question['question'] + '\n', curses.A_BOLD)
             answer = question['answer']
             answer_words = question['answer'].split()
 
-            win_println(cli) 
+            win.addstr(cli) 
             in_word, state = get_word()
 
             if state == '\n':
@@ -64,22 +51,30 @@ def main():
             for i in range(len(answer_words)):
 
                 if in_word != answer_words[i]:
+                    win.addstr('\n')
                     while True:
                         if correct is None:
-                            win_println(info + answer)
-                            win_println(info + 'Practice more!')
+                            win.addstr(info)
+                            for j in range(len(answer_words)):
+                                if j == i:
+                                    win.addstr(answer_words[j], curses.A_STANDOUT)
+                                    win.addstr(' ')
+                                else:
+                                    win.addstr(answer_words[j] + ' ')
+                            win.addstr('\n')
+                            win.addstr(info)
+                            win.addstr('Practice more!\n', curses.A_UNDERLINE)
                             correct = False
                         else:
-                            win_print(info) 
+                            win.addstr(info) 
                             for j in range(i):
-                                x += len(answer_words[j]) + 1
-                            win_println(answer_words[i])
+                                win.addstr(' ' * (len(answer_words[j]) + 1))
+                            win.addstr(answer_words[i] + '\n', curses.A_STANDOUT)
 
-                        win_print(cli) 
+                        win.addstr(cli) 
 
                         for j in range(i):
-                            win_print(answer_words[j] + ' ')
-                        win_println('')
+                            win.addstr(answer_words[j] + ' ')
                         
                         in_word, state = get_word()
 
@@ -89,6 +84,8 @@ def main():
 
                         if in_word == answer_words[i]:
                             break
+                        else:
+                            win.addstr('\n')
 
                 if correct is None and i == len(answer_words) - 1:
                     correct = True
