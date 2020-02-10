@@ -11,9 +11,6 @@ def main():
                         type=argparse.FileType('r'),
                         help='Input file.')
 
-    clo = '>>> '
-    cli = '<<< '
-    info = '--> '
     args = parser.parse_args()
     f = args.file
     data = json.load(f)
@@ -33,12 +30,10 @@ def main():
     for question in data:
         while True:
             win.clear()
-            win.addstr(clo)
             win.addstr(question['question'] + '\n', curses.A_BOLD)
             answer = question['answer']
             answer_words = question['answer'].split()
 
-            win.addstr(cli) 
             in_word, state = get_word()
 
             if state == '\n':
@@ -49,13 +44,14 @@ def main():
 
             correct = None
             restart_question = False
+            total_chrs = 0
+            last_x = 0
             for i in range(len(answer_words)):
 
                 if in_word != answer_words[i]:
                     win.addstr('\n')
                     while True:
                         if correct is None:
-                            win.addstr(info)
                             for j in range(len(answer_words)):
                                 if j == i:
                                     win.addstr(answer_words[j], curses.A_STANDOUT)
@@ -68,18 +64,12 @@ def main():
                             win.addstr('\n')
                             correct = False
                         else:
-                            win.addstr(info) 
-                            total_spaces = 0
-                            for j in range(i):
-                                total_spaces += len(answer_words[j]) + 1
-                            win.addstr(' ' * (total_spaces % ncols))
+                            win.addstr(' ' * (total_chrs % ncols))
                             win.addstr(answer_words[i] + '\n', curses.A_STANDOUT)
 
-                        win.addstr(cli) 
-
-                        for j in range(i):
-                            win.addstr(answer_words[j] + ' ')
+                        win.addstr(answer[total_chrs - last_x : total_chrs])
                         
+                        _, last_x = win.getyx()
                         in_word, state = get_word()
 
                         if state == '\n':
@@ -91,6 +81,10 @@ def main():
                         else:
                             win.addstr('\n')
 
+                total_chrs += len(answer_words[i])
+                if i < len(answer_words) - 1:
+                    total_chrs += 1
+
                 if correct is None and i == len(answer_words) - 1:
                     correct = True
                     break
@@ -98,6 +92,7 @@ def main():
                 if i == len(answer_words) - 1 or restart_question:
                     break
 
+                _, last_x = win.getyx()
                 in_word, state = get_word()
 
                 if state == '\n' and i < len(answer_words) - 2:
