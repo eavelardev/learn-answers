@@ -20,7 +20,6 @@ def main():
     f.close()
     curses.initscr()
     win = curses.initscr()
-    num_rows, num_cols = win.getmaxyx()
 
     def win_print(value):
         global x, y
