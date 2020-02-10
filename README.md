@@ -1,7 +1,7 @@
 # learn-answers
 Program to learn the answers of a set of questions
 
-I think that one of the best ways to learn new things y through repetion, for that reason I did this program for learn the answers of a set of questions in a fun way, importing that information from a JSON.
+I think that one of the best ways to learn new things is through repetition, for that reason I did this program to learn the answers of a set of questions in a fun way, importing that information from a JSON.
 
 ## Using
 
