@@ -19,7 +19,7 @@ def main():
     data = json.load(f)
     f.close()
     win = curses.initscr()
-    # curses.start_color()
+    nlines, ncols = win.getmaxyx()
 
     def get_word():
         word = ''
@@ -33,7 +33,8 @@ def main():
     for question in data:
         while True:
             win.clear()
-            win.addstr(clo + question['question'] + '\n', curses.A_BOLD)
+            win.addstr(clo)
+            win.addstr(question['question'] + '\n', curses.A_BOLD)
             answer = question['answer']
             answer_words = question['answer'].split()
 
@@ -58,17 +59,20 @@ def main():
                             for j in range(len(answer_words)):
                                 if j == i:
                                     win.addstr(answer_words[j], curses.A_STANDOUT)
-                                    win.addstr(' ')
                                 else:
-                                    win.addstr(answer_words[j] + ' ')
+                                    win.addstr(answer_words[j], curses.A_UNDERLINE)
+
+                                if j != len(answer_words) -1:
+                                        win.addstr(' ', curses.A_UNDERLINE)
+
                             win.addstr('\n')
-                            win.addstr(info)
-                            win.addstr('Practice more!\n', curses.A_UNDERLINE)
                             correct = False
                         else:
                             win.addstr(info) 
+                            total_spaces = 0
                             for j in range(i):
-                                win.addstr(' ' * (len(answer_words[j]) + 1))
+                                total_spaces += len(answer_words[j]) + 1
+                            win.addstr(' ' * (total_spaces % ncols))
                             win.addstr(answer_words[i] + '\n', curses.A_STANDOUT)
 
                         win.addstr(cli) 
