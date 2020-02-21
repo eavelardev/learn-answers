@@ -9,7 +9,7 @@
     },
     {
         "question": "Examples of DevOps goals:",
-        "answer": "Few production failures, Immediate recovery from failures, Faster time-to-market"
+        "answer": "Few production failures, immediate recovery from failures and faster time-to-market"
     },
     {
         "question": "What is the usual priority of operations without DevOps?",

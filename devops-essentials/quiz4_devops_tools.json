@@ -16,11 +16,11 @@
         "answer": "Application performance monitoring (APM)"
     },
     {
-        "question": "Which of the following are orchestration tools?",
-        "answer": "Zookeeper, Kubernetes, Docker swarm"
+        "question": "Orchestration tools:",
+        "answer": "Zookeeper, Kubernetes and Docker Swarm"
     },
     {
-        "question": "Which of the following can be considered configuration management tools?",
-        "answer": "Puppet, Ansible, Chef"
+        "question": "Configuration management tools:",
+        "answer": "Puppet, Ansible and Chef"
     }
 ]

@@ -20,8 +20,8 @@
         "answer": "Managing infrastructure using code and automation"
     },
     {
-        "question": "Which of the following are benefits of continuous integration?",
-        "answer": "Early detection of integration problems, eliminates the pre-release scramble, encourage good coding practices"
+        "question": "Benefits of continuous integration?",
+        "answer": "Early detection of integration problems. Eliminates the pre-release scramble. Encourage good coding practices"
     },
     {
         "question": "What is the process that automatically compiles files into a useable form called?",
@@ -33,6 +33,6 @@
     },
     {
         "question": "Benefits of configuration management:",
-        "answer": "Maintainability, Time savings, Minimize configuration drift"
+        "answer": "Maintainability, time savings and minimize configuration drift"
     }
 ]
