@@ -1,0 +1,38 @@
+[
+    {
+        "question": "What is continuous delivery?",
+        "answer": "Always maintaining code in a deployable state"
+    },
+    {
+        "question": "What are small, loosely-coupled services that make up a larger application called?",
+        "answer": "Microservices"
+    },
+    {
+        "question": "Which practice helps you quickly identify problems in production?",
+        "answer": "Monitoring"
+    },
+    {
+        "question": "What is orchestration?",
+        "answer": "Automation that supports processes and workflows"
+    },
+    {
+        "question": "What does infrastructure as code mean?",
+        "answer": "Managing infrastructure using code and automation"
+    },
+    {
+        "question": "Which of the following are benefits of continuous integration?",
+        "answer": "Early detection of integration problems, eliminates the pre-release scramble, encourage good coding practices"
+    },
+    {
+        "question": "What is the process that automatically compiles files into a useable form called?",
+        "answer": "Build automation"
+    },
+    {
+        "question": "How often should you be deploying to production with continuous deployment?",
+        "answer": "There is no set standard"
+    },
+    {
+        "question": "Benefits of configuration management:",
+        "answer": "Maintainability, Time savings, Minimize configuration drift"
+    }
+]

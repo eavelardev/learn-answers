@@ -1,6 +1,7 @@
 import argparse
 import json
 import curses
+import random
 
 def main():
     parser = argparse.ArgumentParser(description='Learn answers.')
@@ -8,11 +9,16 @@ def main():
     parser.add_argument('-f', '--file',
                         type=argparse.FileType('r'),
                         help='Input file.')
+    parser.add_argument('-r', '--random',
+                        action='store_true',
+                        help='Choose random question.')
 
     args = parser.parse_args()
     f = args.file
     data = json.load(f)
     f.close()
+    if args.random:
+        random.shuffle(data)
     win = curses.initscr()
     nlines, ncols = win.getmaxyx()
 
@@ -25,9 +31,11 @@ def main():
             if ch.isprintable():
                 word += ch
 
-    for question in data:
+    for q, question in enumerate(data):
         while True:
             win.clear()
+            if not args.random:
+                win.addstr(str(q+1) + '. ')
             win.addstr(question['question'] + '\n', curses.A_BOLD)
             answer = question['answer']
             answer_words = question['answer'].split()

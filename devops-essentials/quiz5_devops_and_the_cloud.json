@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Google Cloud Functions is an example of what type of service?",
+        "answer": "Serverless (FaaS)"
+    },
+    {
+        "question": "What DevOps practice is AWS CloudFormation used for?",
+        "answer": "Infrastructure as Code"
+    },
+    {
+        "question": "A cloud provider gives you a bare OS that you are responsible for configuring. What type of cloud stack is this?",
+        "answer": "Infrastructure as a service (IaaS)"
+    },
+    {
+        "question": "What DevOps practice does Azure Application Insights support?",
+        "answer": "Monitoring"
+    },
+    {
+        "question": "Which cloud architectural model only lets you deploy small, single-purpose functions instead of larger applications?",
+        "answer": "Serverless (FaaS)"
+    },
+    {
+        "question": "Relationship between DevOps and the cloud:",
+        "answer": "Cloud services offer tools to support DevOps, DevOps is very beneficial in the cloud"
+    }
+]

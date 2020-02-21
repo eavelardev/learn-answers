@@ -9,8 +9,14 @@ I think that one of the best ways to learn new things is through repetition, for
 python learn_answers.py --file <my json file>
 ```
 
-example:
+example
 
 ```
 python learn_answers.py --file handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
+```
+
+to choosing random questions add `-r` argument
+
+```
+python learn_answers.py -r --file handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
 ```

@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is the usual priority of developers without DevOps?",
+        "answer": "Speed of delivery"
+    },
+    {
+        "question": "In a DevOps culture, which group's priorities are more important?",
+        "answer": "Both are equally important"
+    },
+    {
+        "question": "Examples of DevOps goals:",
+        "answer": "Few production failures, Immediate recovery from failures, Faster time-to-market"
+    },
+    {
+        "question": "What is the usual priority of operations without DevOps?",
+        "answer": "Stability"
+    },
+    {
+        "question": "What are the two main shared goals in a DevOps culture?",
+        "answer": "Speed of delivery and stability"
+    }
+]

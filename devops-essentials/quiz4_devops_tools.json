@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Jenkins is an example of which type of tool?",
+        "answer": "Continuous integration"
+    },
+    {
+        "question": "What is the most popular tool used for containerization?",
+        "answer": "Docker"
+    },
+    {
+        "question": "Grunt is an example of which type of tool?",
+        "answer": "Build automation"
+    },
+    {
+        "question": "What type of monitoring focuses on things like application logs and response times?",
+        "answer": "Application performance monitoring (APM)"
+    },
+    {
+        "question": "Which of the following are orchestration tools?",
+        "answer": "Zookeeper, Kubernetes, Docker swarm"
+    },
+    {
+        "question": "Which of the following can be considered configuration management tools?",
+        "answer": "Puppet, Ansible, Chef"
+    }
+]
