@@ -4,10 +4,6 @@
         "answer": "Speed of delivery"
     },
     {
-        "question": "In a DevOps culture, which group's priorities are more important?",
-        "answer": "Both are equally important"
-    },
-    {
         "question": "Examples of DevOps goals:",
         "answer": "Few production failures, immediate recovery from failures and faster time-to-market"
     },
