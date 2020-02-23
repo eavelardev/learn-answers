@@ -23,8 +23,6 @@ def main():
     f = args.file
     data = json.load(f)
     f.close()
-    if args.random:
-        random.shuffle(data)
     win = curses.initscr()
     nlines, ncols = win.getmaxyx()
 
@@ -37,6 +35,9 @@ def main():
             if ch.isprintable():
                 word += ch
     while True:
+        if args.random:
+            random.shuffle(data)
+
         for q, question in enumerate(data):
             while True:
                 win.clear()
