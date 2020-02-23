@@ -34,9 +34,14 @@ def main():
                 return word, ch
             if ch.isprintable():
                 word += ch
+
     while True:
-        if args.random:
-            random.shuffle(data)
+        if args.random and len(data) > 1:
+            last_q = data[-1]['question']
+            while True:
+                random.shuffle(data)
+                if data[0]['question'] != last_q:
+                    break
 
         for q, question in enumerate(data):
             while True:
