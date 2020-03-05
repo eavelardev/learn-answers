@@ -1,0 +1,86 @@
+[
+    {
+        "question": "You need to deploy multiple EC2 Linux instances that will provide your company with virtual private networks (VPNs) using software called OpenVPN. Which will be the most efficient solutions?",
+        "answer": "Select a regular Linux AMI and bootstrap it using user data that will install and configure the OpenVPN package on the instance and use it for your VPN instances. Search the AWS Marketplace to see whether there’s an official AMI provided and supported by the OpenVPN company."
+    },
+    {
+        "question": "You have a VMware virtual machine in your local infrastructure that you’d like to copy to your AWS account and run as an EC2 instance. Which will be necessary steps?",
+        "answer": "Import the virtual machine using VM Import/Export. Select the imported VM from among your private AMIs and launch an instance."
+    },
+    {
+        "question": "Your AWS CLI command to launch an AMI as an EC2 instance has failed, giving you an error message that includes InvalidAMIID.NotFound . What is the most likely cause?",
+        "answer": "The AMI you specified exists in a different region than the one you’ve currently specified. AMIs are specific to a single AWS region and cannot be deployed into any other region. Should your AWS CLI or its key pair not be configured properly, your connection would have failed completely."
+    },
+    {
+        "question": "The sensitivity of the data your company works with means that the instances you run must be secured through complete physical isolation. What should you specify as you configure a new instance?",
+        "answer": "Dedicated Host tenancy."
+    },
+    {
+        "question": "Dedicated Instance tenancy instances may be hosted on ...",
+        "answer": "the same physical server as other instances within your account."
+    },
+    {
+        "question": "Normally, two instances running m5.large instance types can handle the traffic accessing your online e-commerce site, but you know that you will face short, unpredictable periods of high demand. Which should you implement?",
+        "answer": "Configure autoscaling and purchase two m5.large reserve instances and as many on-demand"
+    },
+    {
+        "question": "Reserved instances will give you ...",
+        "answer": "the best price for instances you know will be running 24/7."
+    },
+    {
+        "question": "On-demand instances makes the most sense for ...",
+        "answer": "workloads that will run at unpredictable times but can’t be shut down until they’re no longer needed."
+    },
+    {
+        "question": "Load balancing controls ...",
+        "answer": "traffic routing and, on its own, has no impact on your ability to meet changing demand."
+    },
+    {
+        "question": "Which would be most cost effective using spot market instances?",
+        "answer": "You provide high-end video rendering services using a fault-tolerant process that can easily complete a job that was unexpectedly interrupted."
+    },
+    {
+        "question": "Spot market instances can be ...",
+        "answer": "shut down with only a minimal (two-minute) warning, so they’re not recommended for workloads that require reliably predictable service. Even if your AMI can be re-launched, the interrupted workload will still be lost. Static S3 websites don’t run on EC2 infrastructure in the first place."
+    },
+    {
+        "question": "Which configuration details cannot be changed on an existing EC2 instance?",
+        "answer": "AMI "
+    },
+    {
+        "question": "For an account with multiple resources running as part of multiple projects, which would make for the most effective identification convention for resource tags?",
+        "answer": "project1:server1. The first of two strings in a resource tag is the key —the group to which the specific resource belongs. The second string is the value , which identifies the resource itself."
+    },
+    {
+        "question": "Which EBS will you need to keep your data-hungry application that requires up to 20,000 IOPS happy?",
+        "answer": "Provisioned-IOPS SSD volumes are currently the only type that comes close to 20,000 IOPS. In fact, they can deliver up to 32,000 IOPS."
+    },
+    {
+        "question": "If you want to generate an AMI from an existing EBS volume, which steps will get you there?",
+        "answer": "Create o import a snapshot of an EBS root volume you need and use it to create an image or create an image from the EBS volume attached to the instance, select your new AMI from your private collection, and launch it."
+    },
+    {
+        "question": "Which of the following are benefits of instance store volumes?",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    }
+]    

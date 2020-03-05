@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which EC2 service can be used without charge under the Free Tier?",
+        "answer": "t2.micro EC2 instance type instances for a total of 750 hours per month"
+    },
+    {
+        "question": "You want to experiment with deploying a web server on an EC2 instance. Which two of the following resources can you include to make that work while remaining within the Free Tier?\n    • A 5 GB bucket on S3\n    • A t2.micro instance type EC2 instance\n    • A 30 GB solid-state Elastic Block Store (EBS) drive\n    • Two 20 GB solid-state Elastic Block Store (EBS) drives\n",
+        "answer": "A t2.micro instance type EC2 instance. A 30 GB solid-state Elastic Block Store (EBS) drive"
+    },
+    {
+        "question": "Which of the following usage will always be cost-free even after your account’s Free Tier has expired?\n    • One million API calls/month on Amazon API Gateway\n    • 10 GB of data retrievals from Amazon Glacier per month\n    • 500 MB/month of free storage on the Amazon Elastic Container Registry (ECR)\n    • 10 custom monitoring metrics and 10 alarms on Amazon CloudWatch",
+        "answer": "10 GB of data retrievals from Amazon Glacier per month. A 10 custom monitoring metrics and 10 alarms on Amazon CloudWatch"
+    },
+    {
+        "question": "Which tools are available to ensure you won’t accidentally run past your Free Tier limit and incur unwanted costs?",
+        "answer": "Automated email alerts when activity approaches the Free Tier limits. The Top Free Tier Services by Usage section on the Billing & Cost Management Dashboard"
+    },
+    {
+        "question": "Which is likely to be an accurate source of AWS pricing information?",
+        "answer": "AWS online documentation relating to a particular service"
+    },
+    {
+        "question": "Which will probably not affect the pricing for an AWS service?",
+        "answer": "Requests for raising the available service limit"
+    },
+    {
+        "question": "Which is a limitation of the AWS Simple Monthly Calculator?",
+        "answer": "Not all AWS services are included."
+    },
+    {
+        "question": "Which Simple Monthly Calculator selections will likely have an impact on most other configuration choices on the page?",
+        "answer": "Free Usage Tier. Choose Region"
+    },
+    {
+        "question": "Which is not an included parameter in the AWS Total Cost of Ownership Calculator?",
+        "answer": "The tax implications of a cloud deployment"
+    },
+    {
+        "question": "Which AWS Total Cost of Ownership Calculator parameters is likely to have the greatest impact on cost?",
+        "answer": "Number of servers"
+    },
+    {
+        "question": "Which of the following AWS documentation URLs points to the page containing an up-to-date list of service limits?\n    • https://docs.aws.amazon.com/general/latest/gr/limits.html\n    • https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html\n    • https://aws.amazon.com/general/latest/gr/aws_service_limits.html\n    • https://docs.aws.amazon.com/latest/gr/aws_service_limits.html\n",
+        "answer": "https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html"
+    },
+    {
+        "question": "Which describes one possible reason for AWS service limits?",
+        "answer": "To prevent individual customers from accidentally launching a crippling level of resource consumption"
+    },
+    {
+        "question": "Is it always possible to request service limit increases from AWS?",
+        "answer": "No. Some service limits are hard."
+    },
+    {
+        "question": "Which is the best place to get a quick summary of this month’s spend for your account?",
+        "answer": "Billing & Cost Management Dashboard"
+    },
+    {
+        "question": "What is the main goal for creating a Usage budget type (in AWS Budgets)?",
+        "answer": "To track particular categories of resource consumption"
+    },
+    {
+        "question": "Which is not a setting you can configure in a Cost budget?",
+        "answer": "Owner (username of resource owner)"
+    },
+    {
+        "question": "What is the main difference between the goals of Cost Explorer and of cost and usage reports?",
+        "answer": "Cost Explorer displays visualizations of high-level historical and current account costs, while cost and usage reports generate granular usage reports in CSV format."
+    },
+    {
+        "question": "What is the purpose of cost allocation tags?",
+        "answer": "To help you identify resources for the purpose of tracking your account spending"
+    },
+    {
+        "question": "Which scenarios would be a good use case for AWS Organizations?",
+        "answer": "A single company with multiple AWS accounts that wants a single place to administrate everything. A company that’s integrated some operations with an upstream vendor"
+    },
+    {
+        "question": "Which of these tools lets you design graphs within the browser interface to track your account spending?",
+        "answer": "Budgets"
+    }
+]    

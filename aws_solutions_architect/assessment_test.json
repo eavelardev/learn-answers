@@ -1,0 +1,158 @@
+[
+    {
+        "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
+        "answer": "False, the Business plan offers access to a support API, but the Developer plan does not."
+    },
+    {
+        "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
+        "answer": "False, customers are responsible for managing the network configuration of EC2 instances. AWS is responsible for the physical network infrastructure."
+    },
+    {
+        "question": "Which service is most useful for decoupling the components of a monolithic application?",
+        "answer": "Simple Queue Service (SQS) allows for event-driven messaging within distributed systems that can decouple while coordinating the discrete steps of a larger process."
+    },
+    {
+        "question": "An application you want to run on EC2 requires you to license it based on the number of physical CPU sockets and cores on the hardware you plan to run the application on. Which  tenancy model should you specify?",
+        "answer": "The dedicated host option lets you see the number of physical CPU sockets and cores on a host."
+    },
+    {
+        "question": "True/false: Changing the instance type of an EC2 instance will change its elastic IP address.",
+        "answer": "False, an elastic IP address will not change. A public IP address attached to an instance will change if the instance is stopped, as would happen when changing the instance type."
+    },
+    {
+        "question": "True/false: You can use a Quick Start Amazon Machine Image (AMI) to create any instance type.",
+        "answer": "True, a Quick Start AMI is independent of the instance type."
+    },
+    {
+        "question": "Which S3 encryption option does not require AWS persistently storing the encryption keys it uses to decrypt data?",
+        "answer": "SSE-C, with SSE-C you provide your own keys for Amazon to use to decrypt and encrypt your data. AWS doesn’t persistently store the keys."
+    },
+    {
+        "question": "True/false: Durability measures the percentage of likelihood that a given object will not be inadvertently lost by AWS over the course of a year.",
+        "answer": "True, durability corresponds to an average annual expected loss of objects stored on S3, not including objects you delete. Availability measures the amount of time S3 will be available to let you retrieve those objects."
+    },
+    {
+        "question": "True/false: After uploading a new object to S3, there will be a slight delay (one to two seconds) before the object is available.",
+        "answer": "False, S3 uses a read-after-write consistency model for new objects, so once you upload an object to S3, it’s immediately available."
+    },
+    {
+        "question": "You created a Virtual Private Cloud (VPC) using the Classless Inter-Domain Routing (CIDR) block 10.0.0.0/24. You need to connect to this VPC from your internal network, but the IP addresses in use on your internal network overlap with the CIDR. Which is a valid way to address this problem?",
+        "answer": "Create a new VPC with a different CIDR. You can’t change the primary CIDR for a VPC, so you must create a new one to connect it to your internal network."
+    },
+    {
+        "question": "True/false: An EC2 instance must be in a public subnet to access the internet.?",
+        "answer": "False, an EC2 instance can access the Internet from a private subnet provided it uses a NAT gateway or NAT instance."
+    },
+    {
+        "question": "True/false: The route table for a public subnet must have a default route pointing to an Internet gateway as a target.",
+        "answer": "True, the definition of a public subnet is a subnet that has a default route pointing to an Internet gateway as a target. Otherwise , it’s a private subnet."
+    },
+    {
+        "question": "Which use case is well suited for DynamoDB?",
+        "answer": "Storing JSON documents that have a consistent structure. DynamoDB is a key-value store that can be used to store DynamoDB is a key-value store that can be used to store"
+    },
+    {
+        "question": "True/false: You can create a DynamoDB global secondary index for an existing table at any time.",
+        "answer": "True, you can create a global secondary index for an existing table at any time. You can create a local secondary index only when you create the table."
+    },
+    {
+        "question": "True/false: Enabling point-in-time RDS snapshots is sufficient to give you a recovery point objective (RPO) of less than 10 minutes.",
+        "answer": "True, enabling point-in-time recovery gives you an RPO of about five minutes. The recovery time objective (RTO) depends on the amount of data to restore."
+    },
+    {
+        "question": "Which of the following steps does the most to protect your AWS account?",
+        "answer": "Revoking unnecessary access for IAM users is the most effective of the listed measures for protecting your AWS account."
+    },
+    {
+        "question": "Which step does the most to protect your AWS account?",
+        "answer": "AWS Key Management Service (KMS). KMS can be used to encrypt Elastic Block Store (EBS) volumes that store an instance’s operating system."
+    },
+    {
+        "question": "What is a difference between a token generated by the AWS Security Token Service (STS) and an IAM access key?",
+        "answer": "The token generated by STS expires. STS tokens expire while IAM access keys do not. An STS token can be used more than once. IAM access keys and STS tokens are both unique. An IAM principal can use an STS token."
+    },
+    {
+        "question": "True/false: EC2 sends instance memory utilization metrics to CloudWatch every five minutes.",
+        "answer": "False, EC2 doesn’t track instance memory utilization."
+    },
+    {
+        "question": "You configured a CloudWatch alarm to monitor CPU utilization for an EC2 instance. The alarm began in the INSUFFICIENT_DATA state and then entered the ALARM state. What can you conclude from this?",
+        "answer": "The CPU utilization metric crossed the alarm threshold. The transition to the ALARM state simply implies that the metric crossed a threshold but doesn’t tell you what the threshold is. Newly created alarms start out in the INSUFFICIENT_DATA state."
+    },
+    {
+        "question": "Where do AWS Config and CloudTrail store their logs?",
+        "answer": "S3 buckets."
+    },
+    {
+        "question": "True/false: An EC2 instance in a private subnet can resolve an “A” resource record for a public hosted zone hosted in Route 53.",
+        "answer": "True, an EC2 instance in a private subnet still has access to Amazon’s private DNS servers , which can resolve records stored in public hosted zones."
+    },
+    {
+        "question": "You want to use Route 53 to send users to the application load balancer closest to them. Which policie lets you do this with the least effort?",
+        "answer": "Geoproximity routing routes users to the location closest to them. Geolocation routing requires you to create records for specific locations or create a default record."
+    },
+    {
+        "question": "True/false: You can use an existing domain name with Route 53 without switching its registration to AWS.",
+        "answer": "True, Route 53 is a true DNS service in that it can host zones for any domain name. You can also register domain names with or transfer them to Route 53."
+    },
+    {
+        "question": "You’re designing an application that takes multiple image files and combines them into a video file that users on the Internet can download. Which can help you quickly implement your application in the fastest, most highly available, and most cost-effective manner?",
+        "answer": "Lambda is a highly available, reliable, “serverless” compute platform that runs functions as needed and scales elastically to meet demand. EC2 spot instances can be shut down on short notice."
+    },
+    {
+        "question": "You’re using EC2 Auto Scaling and want to implement a scaling policy that adds one extra instance only when the average CPU utilization of each instance exceeds 90 percent. However, you don’t want it to add more than one instance every five minutes. Which scaling policie should you use?",
+        "answer": "A simple scaling policy changes the group size and then has a cooldown period before doing so again. Step scaling policies don’t have cooldown periods. Target tracking policies attempt to keep a metric at a set value. PercentChangeInCapacity is a simple scaling adjustment type, not a scaling policy. See"
+    },
+    {
+        "question": "True/false: EC2 Auto Scaling automatically replaces group instances directly terminated by the root user.?",
+        "answer": "True, Auto Scaling always attempts to maintain the minimum group size or, if set, the desired capacity."
+    },
+    {
+        "question": "Which ElastiCache engine can persistently store data?",
+        "answer": "Redis. ElastiCache supports Memcached and Redis, but only the latter can store data persistently."
+    },
+    {
+        "question": "Which of the following: CloudFormation, Puppet, OpsWorks, Snowball, is not an AWS service? ",
+        "answer": "Puppet is a configuration management platform that AWS offers via OpsWorks but is not itself an AWS service."
+    },
+    {
+        "question": "True/false: S3 cross-region replication uses transfer acceleration.",
+        "answer": "False, S3 cross-region replication transfers objects between different buckets. Transfer acceleration uses a CloudFront edge location to speed up transfers between S3 and the Internet."
+    },
+    {
+        "question": "Which service can you deactivate on your account?",
+        "answer": "Security Token Service (STS), you can deactivate STS for all regions except US East."
+    },
+    {
+        "question": "Which service can alert you to malware on an EC2 instance?",
+        "answer": "AWS GuardDuty looks for potentially malicious activity. Inspector looks for vulnerabilities that may result in compromise. Shield and Web Application Firewall protect applications from attack."
+    },
+    {
+        "question": "True/false: If versioning is enabled on an S3 bucket, applying encryption to an unencrypted object in that bucket will create a new, encrypted version of that object.",
+        "answer": "True, applying encryption to an unencrypted object will create a new, encrypted version of that object. Previous versions remain unencrypted."
+    },
+    {
+        "question": "Which instance type will, if left running, continue to incur costs?",
+        "answer": "On-demand instances will continue to run and incur costs. Reserved instances cost the same whether they’re running or stopped. Spot instances will be terminated when the spot price exceeds your bid price."
+    },
+    {
+        "question": "True/false: The EBS Lifecycle Manager can take snapshots of volumes that were once attached to terminated instances.",
+        "answer": "True, the EBS Lifecycle Manager can take scheduled snapshots of any EBS volume, regardless of attachment state."
+    },
+    {
+        "question": "Which lets you spin up new web servers the quickest?",
+        "answer": "Elastic Container Service lets you run containers that can launch in a matter of seconds. EC2 instances take longer. Lambda is “serverless,” so you can’t use it to run a web server. CloudFront provides caching but isn’t a web server."
+    },
+    {
+        "question": "True/false: CloudFormation stack names are case-sensitive.",
+        "answer": "True."
+    },
+    {
+        "question": "Where might CodeDeploy look for the appspec.yml file?",
+        "answer": "CodeDeploy looks for the appspec.yml file with the application files it is to deploy, which can be stored in S3 or on GitHub."
+    },
+    {
+        "question": "True/false: You can use either CodeDeploy or an AWS Systems Manager command document to deploy a Lambda application.",
+        "answer": "False, you can use CodeDeploy to deploy an application to Lambda or EC2 instances. But an AWS Systems Manager command document works only on EC2 instances."
+    }
+]

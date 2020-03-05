@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Your developers want to run fully provisioned EC2 instances to support their application code deployments but prefer not to have to worry about manually configuring and launching the necessary infrastructure. Which should they use?",
+        "answer": "AWS Elastic Beanstalk takes care of the ongoing underlying deployment details for you."
+    },
+    {
+        "question": "AWS Lambda will respond to ...",
+        "answer": "trigger events by running code a single time"
+    },
+    {
+        "question": "Amazon EC2 Auto Scaling will ramp up ...",
+        "answer": "existing infrastructure in response to demand,"
+    },
+    {
+        "question": "Amazon Route 53 manages ...",
+        "answer": "DNS and network routing."
+    },
+    {
+        "question": "Which service would you use to most effectively reduce the latency your end users experience when accessing your application resources over the Internet?",
+        "answer": "Amazon CloudFront maintains a network of endpoints where cached versions of your application data are stored to provide quicker responses to user requests."
+    },
+    {
+        "question": "Elastic Load Balancing routes ...",
+        "answer": "incoming user requests among a cluster of available servers"
+    },
+    {
+        "question": "Amazon Glacier provides ...",
+        "answer": "high-latency, low-cost file storage."
+    },
+    {
+        "question": "Which is the best use-case scenario for Elastic Block Store?",
+        "answer": "You need persistent storage for the file system run by your EC2 instance. Elastic Block Store provides virtual block devices on which you can install and run filesystems and data operations. It is not normally a cost-effective option for long-term data storage."
+    },
+    {
+        "question": "Which is the best tool to control access to your AWS services and administration console?",
+        "answer": "AWS Identity and Access Management (IAM) lets you create user accounts, groups, and roles and assign them rights and permissions over specific services and resources within your AWS account."
+    },
+    {
+        "question": "Key Management Service (KMS) is ...",
+        "answer": "a tool for generating and managing encryption keys."
+    },
+    {
+        "question": "AWS Directory Service allows you to ...",
+        "answer": "integrate your resources with external users and resources through third-party authentication services. "
+    },
+    {
+        "question": "Simple WorkFlow (SWF) is ...",
+        "answer": "a tool for coordinating application tasks."
+    },
+    {
+        "question": "For data workloads requiring more speed and flexibility than a closely defined structure offers, which service should you choose?",
+        "answer": "Amazon DynamoDB provides a NoSQL database service for workloads that can be more efficiently run without the relational schema of SQL database engines"
+    },
+    {
+        "question": "Which of the following is the correct endpoint address for an EC2 instance running in the AWS Ireland region?",
+        "answer": "ec2.eu-west-1.amazonaws.com, EC2 endpoints will always start with an ec2 prefix followed by the region designation."
+    },
+    {
+        "question": "What does the term availability zone refer to in AWS documentation?",
+        "answer": "One or more isolated physical data centers within an AWS region. Regions are geographic areas that contain multiple availability zones, subnets are IP address blocks that can be used within a zone to organize your networked resources, and there can be multiple data centers within an availability zone."
+    },
+    {
+        "question": "Which AWS tool lets you organize your EC2 instances and configure their network connectivity and access control?",
+        "answer": "Amazon Virtual Private Cloud (VPC)"
+    },
+    {
+        "question": "Amazon CloudFront maintains ...",
+        "answer": "a network of endpoints where cached versions of your application data are stored to provide quicker responses to user requests."
+    },
+    {
+        "question": "AWS endpoints are ...",
+        "answer": "URIs that point to AWS resources within your account."
+    },
+    {
+        "question": "You want to be sure that the application you’re building using EC2 and S3 resources will be reliable enough to meet the regulatory standards required within your industry. What should you check?",
+        "answer": "The AWS service level agreement (SLA) tells you the level of service availability you can realistically expect from a particular AWS service. You can use this information when assessing your compliance with external standards."
+    },
+    {
+        "question": "The AWS Shared Responsibility Model ...",
+        "answer": "outlines who is responsible for various elements of your AWS infrastructure."
+    },
+    {
+        "question": "Which would you use to administrate your AWS infrastructure via your local command line or shell scripts?",
+        "answer": "The AWS Command Line Interface (CLI) is a tool for accessing AWS APIs from the command-line shell of your local computer."
+    },
+    {
+        "question": "The AWS SDK is",
+        "answer": "for accessing resources programmatically,"
+    },
+    {
+        "question": "The AWS Console works ...",
+        "answer": "graphically through your browser."
+    },
+    {
+        "question": "The AWS Config is ...",
+        "answer": "a service for editing and auditing your AWS account resources."
+    },
+    {
+        "question": "Your company needs direct access to AWS support for both development and IT team leaders. Which support plan should you purchase?",
+        "answer": "The Business plan."
+    }
+]    

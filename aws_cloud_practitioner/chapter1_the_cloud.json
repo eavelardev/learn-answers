@@ -1,0 +1,50 @@
+[
+    {
+        "question": "Which does not contribute significantly to the operational value of a large cloud provider like AWS?\n    • Multiregional presence\n    • Highly experienced teams of security engineers\n    • Deep experience in the retail sphere\n    • Metered, pay-per-use pricing\n",
+        "answer": "Deep experience in the retail sphere"
+    },
+    {
+        "question": "Which are signs of a highly available application?",
+        "answer": "A failure in one geographic region will trigger an automatic failover to resources in a different region. Spikes in user demand are met through automatically increasing resources."
+    },
+    {
+        "question": "How does the metered payment model make many benefits of cloud computing possible?",
+        "answer": "Experiments with multiple configuration options are now cost-effective. Full-stack applications are possible without the need to invest in capital expenses."
+    },
+    {
+        "question": "Which are direct benefits of server virtualization?",
+        "answer": "Fast resource provisioning and launching and efficient (high-density) use of resources"
+    },
+    {
+        "question": "What is a hypervisor?",
+        "answer": "Software used to administrate virtualized resources run on physical infrastructure"
+    },
+    {
+        "question": "Describe server virtualization?",
+        "answer": "Logically partitioning physical compute and storage devices into multiple smaller virtual devices"
+    },
+    {
+        "question": "Describe Infrastructure as a Service products?",
+        "answer": "Services that give you direct control over underlying compute and storage resources"
+    },
+    {
+        "question": "Describe Platform as a Service products?",
+        "answer": "Services that hide infrastructure complexity behind a simple interface"
+    },
+    {
+        "question": "Describe Software as a Service products?",
+        "answer": "Services that provide a service to end users through a public network"
+    },
+    {
+        "question": "Describe scalability?",
+        "answer": "The ability of an application to automatically add preconfigured compute resources to meet increasing demand"
+    },
+    {
+        "question": "Describe elasticity?",
+        "answer": "The ability of an application to increase or decrease compute resources to match changing demand"
+    },
+    {
+        "question": "Which characteristics most help AWS provide such scalable services?",
+        "answer": "The enormous number of servers it operates and its geographic reach"
+    }
+]    
