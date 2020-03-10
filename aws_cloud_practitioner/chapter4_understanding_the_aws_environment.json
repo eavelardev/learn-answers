@@ -1,10 +1,139 @@
 [
     {
-        "question": "",
-        "answer": ""
+        "question": "Which designation would refer to the AWS US West (Oregon) region?",
+        "answer": "us-west-2"
     },
     {
-        "question": "",
-        "answer": ""
+        "question": "Which is an AWS Region for which customer access is restricted?",
+        "answer": "AWS GovCloud"
+    },
+    {
+        "question": "When you request a new virtual machine instance in EC2, your instance will automatically launch into the currently selected value of which of?",
+        "answer": "Region"
+    },
+    {
+        "question": "Which of the following are not globally based AWS services? (TWO AWS services)",
+        "options": [
+            {
+                "option": "RDS"
+            },
+            {
+                "option": "Route 53"
+            },
+            {
+                "option": "EC2"
+            },
+            {
+                "option": "CloudFront"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Route 53"
+            },
+            {
+                "answer": "CloudFront"
+            }
+        ]
+    },
+    {
+        "question": "Which would be a valid endpoint your developers could use to access a particular Relational Database Service instance you’re running in the Northern Virginia region?",
+        "answer": "rds.us-east-1.amazonaws.com",
+        "note": "The correct syntax for an endpoint is <service-designation>.<region-designation>.amazonaws.com"
+    },
+    {
+        "question": "What are the most significant architectural benefits of the way AWS designed its regions? (TWO architectural benefits)",
+        "answers": [
+            {
+                "answer": "It can make applications available to end users with lower latency"
+            },
+            {
+                "answer": "It can make applications more compliant with local regulations"
+            }
+        ]
+    },
+    {
+        "question": "Why is it that most AWS resources are tied to a single region?",
+        "answer": "Because those resources are run on a physical device, and that device must live somewhere"
+    },
+    {
+        "question": "You want to improve the resilience of your EC2 web server. Which is the most effective and efficient approach?",
+        "answer": "Launch parallel, load-balanced instances in multiple Availability Zones within a single AWS Region"
+    },
+    {
+        "question": "Which is the most accurate description of an AWS Availability Zone?",
+        "answer": "One or more independently powered data centers running a wide range of hardware host types"
+    },
+    {
+        "question": "Which most accurately describes a subnet within the AWS ecosystem?",
+        "answer": "The block of IP addresses assigned for use within a single Availability Zone"
+    },
+    {
+        "question": "What determines the order by which subnets/AZ options are displayed in EC2 configuration dialogs?",
+        "answer": "They (appear) to be displayed in random order"
+    },
+    {
+        "question": "What is the primary goal of autoscaling?",
+        "answer": "To ensure that a predefined service level is maintained regardless of external demand or instance failures"
+    },
+    {
+        "question": "Which design strategie is most effective for maintaining the reliability of a cloud application?",
+        "answer": "Resource redundancy"
+    },
+    {
+        "question": "Which of the following AWS services are not likely to benefit from Amazon edge locations? (TWO AWS services)",
+        "options": [
+            {
+                "option": "RDS"
+            },
+            {
+                "option": "EC2 load balancers"
+            },
+            {
+                "option": "Elastic Block Store (EBS)"
+            },
+            {
+                "option": "CloudFront"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "RDS"
+            },
+            {
+                "answer": "Elastic Block Store (EBS)"
+            }
+        ]
+    },
+    {
+        "question": "Which is the primary benefit of using CloudFront distributions?",
+        "answer": "Reduced latency access to your content no matter where your end users live"
+    },
+    {
+        "question": "What is the main purpose of Amazon Route 53?",
+        "answer": "Managing domain name registration and traffic routing"
+    },
+    {
+        "question": "According to the AWS Shared Responsibility Model, which are responsibilities of AWS?",
+        "answers": [
+            {
+                "answer": "The security of the cloud"
+            },
+            {
+                "answer": "Patching underlying virtualization software running in AWS data centers"
+            }
+        ]
+    },
+    {
+        "question": "According to the AWS Shared Responsibility Model, what’s the best way to define the status of the software driving an AWS managed service?",
+        "answer": "Whatever the customer can control (application code and/or configuration settings) is the customer’s responsibility"
+    },
+    {
+        "question": "Which is one of the first places you should look when troubleshooting a failing application?",
+        "answer": "Service Health Dashboard"
+    },
+    {
+        "question": "Where will you find information on the limits AWS imposes on the ways you can use your account resources?",
+        "answer": "AWS Acceptable Use Policy"
     }
 ]    

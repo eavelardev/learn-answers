@@ -37,15 +37,36 @@
     },
     {
         "question": "What is the key difference between the roles of AWS Professional Services and a technical account manager (TAM)?",
-        "answer": "The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administrate your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure."
+        "answer": "The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administrate your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure"
     },
     {
         "question": "AWS documentation is available in a number of formats, including?",
         "answer": "Kindle and HTML"
     },
     {
-        "question": "Which of the following documentation sites are most likely to contain code snippets for you to cut and (after making sure you understand exactly what they’ll do) paste into your AWS operations?\n    • https://aws.amazon.com/premiumsupport/knowledge-center\n    • https://aws.amazon.com/premiumsupport/compare-plans\n    • https://docs.aws.amazon.com\n    • https://aws.amazon.com/professional-services\n",
-        "answer": "https://aws.amazon.com/premiumsupport/knowledge-center. https://docs.aws.amazon.com"
+        "question": "Which of the following documentation sites are most likely to contain code snippets for you to cut and (after making sure you understand exactly what they’ll do) paste into your AWS operations?",
+        "options": [
+            {
+                "option": "https://aws.amazon.com/premiumsupport/knowledge-center"
+            },
+            {
+                "option": "https://aws.amazon.com/premiumsupport/compare-plans"
+            },
+            {
+                "option": "https://docs.aws.amazon.com"
+            },
+            {
+                "option": "https://aws.amazon.com/professional-services"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "https://aws.amazon.com/premiumsupport/knowledge-center"
+            },
+            {
+                "answer": "https://docs.aws.amazon.com"
+            }
+        ]
     },
     {
         "question": "What is the primary function of the content linked from the Knowledge Center?",
@@ -57,10 +78,24 @@
     },
     {
         "question": "When using AWS documentation pages, what is the best way to be sure the information you’re reading is up-to-date?",
-        "answer": "The page URL will include the word latest."
+        "answer": "The page URL will include the word latest"
     },
     {
         "question": "Which of the following is not a Trusted Advisor category?",
+        "options": [
+            {
+                "option": "Performance"
+            },
+            {
+                "option": "Service Limits"
+            },
+            {
+                "option": "Replication"
+            },
+            {
+                "option": "Fault Tolerance"
+            }
+        ],
         "answer": "Replication"
     },
     {
@@ -76,7 +111,14 @@
         "answer": "An alert for a service state that was actually intentional"
     },
     {
-        "question": "Which of the following Trusted Advisor alerts is available only for accounts on the Business or Enterprise Support plan?",
-        "answer": "Load Balancer Optimization and IAM Access Key Rotation"
+        "question": "Which of the following Trusted Advisor alerts is available only for accounts on the Business or Enterprise Support plan? (TWO Trusted Advisor alerts)",
+        "answers": [
+            {
+                "answer": "Load Balancer Optimization"
+            },
+            {
+                "answer": "IAM Access Key Rotation"
+            }
+        ]
     }
 ]    

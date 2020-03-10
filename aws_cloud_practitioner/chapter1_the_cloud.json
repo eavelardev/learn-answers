@@ -5,11 +5,11 @@
     },
     {
         "question": "Which are signs of a highly available application?",
-        "answer": "A failure in one geographic region will trigger an automatic failover to resources in a different region. Spikes in user demand are met through automatically increasing resources."
+        "answer": "A failure in one geographic region will trigger an automatic failover to resources in a different region. Spikes in user demand are met through automatically increasing resources"
     },
     {
         "question": "How does the metered payment model make many benefits of cloud computing possible?",
-        "answer": "Experiments with multiple configuration options are now cost-effective. Full-stack applications are possible without the need to invest in capital expenses."
+        "answer": "Experiments with multiple configuration options are now cost-effective. Full-stack applications are possible without the need to invest in capital expenses"
     },
     {
         "question": "Which are direct benefits of server virtualization?",

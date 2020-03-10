@@ -1,0 +1,185 @@
+[
+    {
+        "question": "What is the primary function of the AWS IAM service?",
+        "answer": "Identity and access management"
+    },
+    {
+        "question": "Which of the following are requirements you can include in an IAM password policy? (Select THREE.)",
+        "options": [
+            {
+                "option": "Require at least one uppercase letter."
+            },
+            {
+                "option": "Require at least one number."
+            },
+            {
+                "option": "Require at least one space or null character."
+            },
+            {
+                "option": "Require at least one nonalphanumeric character."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Require at least one uppercase letter."
+            },
+            {
+                "answer": "Require at least one number."
+            },
+            {
+                "answer": "Require at least one nonalphanumeric character."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following should you do to secure your AWS root user? (Select TWO.)",
+        "options": [
+            {
+                "option": "Assign the root user to the “admins” IAM group."
+            },
+            {
+                "option": "Use the root user for day-to-day administration tasks."
+            },
+            {
+                "option": "Enable MFA."
+            },
+            {
+                "option": "Create a strong password."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Enable MFA."
+            },
+            {
+                "answer": "Create a strong password."
+            }
+        ]
+    },
+    {
+        "question": "How does multi-factor authentication work?",
+        "answer": "Users authenticate using a password and also either a physical or virtual MFA device."
+    },
+    {
+        "question": "Which SSH command will successfully connect to an EC2 Amazon Linux instance with an IP address of 54.7.35.103 using a key named mykey.pem ?",
+        "answer": "ssh -i mykey.pem ec2-user@54.7.35.103"
+    },
+    {
+        "question": "What’s the most efficient method for managing permissions for multiple IAM users?",
+        "answer": "Assign users requiring similar permissions to IAM groups."
+    },
+    {
+        "question": "What is an IAM role?",
+        "answer": "Permissions granted a trusted entity over specified AWS resources"
+    },
+    {
+        "question": "How can federated identities be incorporated into AWS workflows? (Select TWO.)",
+        "options": [
+            {
+                "option": "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app."
+            },
+            {
+                "option": "You can use identities to guide your infrastructure design decisions."
+            },
+            {
+                "option": "You can use authenticated identities to import external data (like email records from Gmail) into AWS databases."
+            },
+            {
+                "option": "You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app."
+            },
+            {
+                "answer": "You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following are valid third-party federated identity standards? (Select TWO.)",
+        "options": [
+            {
+                "option": "Secure Shell"
+            },
+            {
+                "option": "SSO"
+            },
+            {
+                "option": "SAML 2.0"
+            },
+            {
+                "option": "Active Directory"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "SAML 2.0"
+            },
+            {
+                "answer": "Active Directory"
+            }
+        ]
+    },
+    {
+        "question": "What information does the IAM credential report provide?",
+        "answer": "The current state of security of your IAM users’ access credentials"
+    },
+    {
+        "question": "What text format does the credential report use?",
+        "answer": "CSV"
+    },
+    {
+        "question": "Which IAM policie is the best choice for the admin user you create in order to replace the root user for day-to-day",
+        "answer": "AdministratorAccess"
+    },
+    {
+        "question": "What will you need to provide for a new IAM user you’re creating who will use “programmatic access” to AWS resources?",
+        "answer": "An access key ID and secret access key"
+    },
+    {
+        "question": "What will IAM users with AWS Management Console access need to successfully log in?",
+        "answer": "Their username and password"
+    },
+    {
+        "question": "Which will encrypt your data while in transit between your office and Amazon S3?",
+        "answer": "A client-side master key"
+    },
+    {
+        "question": "Which AWS resource cannot be encrypted using KMS?",
+        "answer": "Existing AWS Elastic Block Store volumes"
+    },
+    {
+        "question": "What does KMS use to encrypt objects stored on your AWS account?",
+        "answer": "Customer master key"
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    }
+]    

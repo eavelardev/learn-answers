@@ -1,43 +1,43 @@
 [
     {
         "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
-        "answer": "False, the Business plan offers access to a support API, but the Developer plan does not."
+        "answer": "False, the Business plan offers access to a support API, but the Developer plan does not"
     },
     {
         "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
-        "answer": "False, customers are responsible for managing the network configuration of EC2 instances. AWS is responsible for the physical network infrastructure."
+        "answer": "False, customers are responsible for managing the network configuration of EC2 instances. AWS is responsible for the physical network infrastructure"
     },
     {
         "question": "Which service is most useful for decoupling the components of a monolithic application?",
-        "answer": "Simple Queue Service (SQS) allows for event-driven messaging within distributed systems that can decouple while coordinating the discrete steps of a larger process."
+        "answer": "Simple Queue Service (SQS) allows for event-driven messaging within distributed systems that can decouple while coordinating the discrete steps of a larger process"
     },
     {
         "question": "An application you want to run on EC2 requires you to license it based on the number of physical CPU sockets and cores on the hardware you plan to run the application on. Which  tenancy model should you specify?",
-        "answer": "The dedicated host option lets you see the number of physical CPU sockets and cores on a host."
+        "answer": "The dedicated host option lets you see the number of physical CPU sockets and cores on a host"
     },
     {
         "question": "True/false: Changing the instance type of an EC2 instance will change its elastic IP address.",
-        "answer": "False, an elastic IP address will not change. A public IP address attached to an instance will change if the instance is stopped, as would happen when changing the instance type."
+        "answer": "False, an elastic IP address will not change. A public IP address attached to an instance will change if the instance is stopped, as would happen when changing the instance type"
     },
     {
         "question": "True/false: You can use a Quick Start Amazon Machine Image (AMI) to create any instance type.",
-        "answer": "True, a Quick Start AMI is independent of the instance type."
+        "answer": "True, a Quick Start AMI is independent of the instance type"
     },
     {
         "question": "Which S3 encryption option does not require AWS persistently storing the encryption keys it uses to decrypt data?",
-        "answer": "SSE-C, with SSE-C you provide your own keys for Amazon to use to decrypt and encrypt your data. AWS doesn’t persistently store the keys."
+        "answer": "SSE-C, with SSE-C you provide your own keys for Amazon to use to decrypt and encrypt your data. AWS doesn’t persistently store the keys"
     },
     {
         "question": "True/false: Durability measures the percentage of likelihood that a given object will not be inadvertently lost by AWS over the course of a year.",
-        "answer": "True, durability corresponds to an average annual expected loss of objects stored on S3, not including objects you delete. Availability measures the amount of time S3 will be available to let you retrieve those objects."
+        "answer": "True, durability corresponds to an average annual expected loss of objects stored on S3, not including objects you delete. Availability measures the amount of time S3 will be available to let you retrieve those objects"
     },
     {
         "question": "True/false: After uploading a new object to S3, there will be a slight delay (one to two seconds) before the object is available.",
-        "answer": "False, S3 uses a read-after-write consistency model for new objects, so once you upload an object to S3, it’s immediately available."
+        "answer": "False, S3 uses a read-after-write consistency model for new objects, so once you upload an object to S3, it’s immediately available"
     },
     {
         "question": "You created a Virtual Private Cloud (VPC) using the Classless Inter-Domain Routing (CIDR) block 10.0.0.0/24. You need to connect to this VPC from your internal network, but the IP addresses in use on your internal network overlap with the CIDR. Which is a valid way to address this problem?",
-        "answer": "Create a new VPC with a different CIDR. You can’t change the primary CIDR for a VPC, so you must create a new one to connect it to your internal network."
+        "answer": "Create a new VPC with a different CIDR. You can’t change the primary CIDR for a VPC, so you must create a new one to connect it to your internal network"
     },
     {
         "question": "True/false: An EC2 instance must be in a public subnet to access the internet.?",
@@ -45,7 +45,7 @@
     },
     {
         "question": "True/false: The route table for a public subnet must have a default route pointing to an Internet gateway as a target.",
-        "answer": "True, the definition of a public subnet is a subnet that has a default route pointing to an Internet gateway as a target. Otherwise , it’s a private subnet."
+        "answer": "True, the definition of a public subnet is a subnet that has a default route pointing to an Internet gateway as a target. Otherwise , it’s a private subnet"
     },
     {
         "question": "Which use case is well suited for DynamoDB?",
@@ -53,15 +53,15 @@
     },
     {
         "question": "True/false: You can create a DynamoDB global secondary index for an existing table at any time.",
-        "answer": "True, you can create a global secondary index for an existing table at any time. You can create a local secondary index only when you create the table."
+        "answer": "True, you can create a global secondary index for an existing table at any time. You can create a local secondary index only when you create the table"
     },
     {
         "question": "True/false: Enabling point-in-time RDS snapshots is sufficient to give you a recovery point objective (RPO) of less than 10 minutes.",
-        "answer": "True, enabling point-in-time recovery gives you an RPO of about five minutes. The recovery time objective (RTO) depends on the amount of data to restore."
+        "answer": "True, enabling point-in-time recovery gives you an RPO of about five minutes. The recovery time objective (RTO) depends on the amount of data to restore"
     },
     {
-        "question": "Which of the following steps does the most to protect your AWS account?",
-        "answer": "Revoking unnecessary access for IAM users is the most effective of the listed measures for protecting your AWS account."
+        "question": "Which step does the most to protect your AWS account?",
+        "answer": "Revoking unnecessary access for IAM users is the most effective of the listed measures for protecting your AWS account"
     },
     {
         "question": "Which step does the most to protect your AWS account?",
@@ -112,8 +112,22 @@
         "answer": "Redis. ElastiCache supports Memcached and Redis, but only the latter can store data persistently."
     },
     {
-        "question": "Which of the following: CloudFormation, Puppet, OpsWorks, Snowball, is not an AWS service? ",
-        "answer": "Puppet is a configuration management platform that AWS offers via OpsWorks but is not itself an AWS service."
+        "question": "Which of the following is not an AWS service?",
+        "options": [
+            {
+                "option": "CloudFormation"
+            },
+            {
+                "option": "Puppet"
+            },
+            {
+                "option": "OpsWorks"
+            },
+            {
+                "option": "Snowball"
+            }
+        ],
+        "answer": "Puppet."
     },
     {
         "question": "True/false: S3 cross-region replication uses transfer acceleration.",

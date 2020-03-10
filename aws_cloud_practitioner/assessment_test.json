@@ -9,19 +9,19 @@
     },
     {
         "question": "How does AWS ensure that no single customer consumes an unsustainable proportion of available resources?",
-        "answer": "AWS imposes default limits on the use of its service resources but allows customers to request higher limits."
+        "answer": "AWS imposes default limits on the use of its service resources but allows customers to request higher limits"
     },
     {
         "question": "The AWS Free Tier is designed to give new account holders the opportunity to get to know how their services work without necessarily costing any money. How does it work?",
-        "answer": "You get free lightweight access to many core AWS services for a full 12 months."
+        "answer": "You get free lightweight access to many core AWS services for a full 12 months"
     },
     {
         "question": "AWS customers receive “production system down” support within one hour when they subscribe to which support plan(s)?",
-        "answer": "Business and Enterprise."
+        "answer": "Business and Enterprise"
     },
     {
         "question": "AWS customers get full access to the AWS Trusted Advisor best practice checks when they subscribe to which support plan(s)?",
-        "answer": "Developer, Business, and Enterprise."
+        "answer": "Developer, Business, and Enterprise"
     },
     {
         "question": "The AWS Shared Responsibility Model illustrates how AWS itself (as opposed to its customers) is responsible for which aspects of the cloud environment?",
@@ -29,11 +29,11 @@
     },
     {
         "question": "Which is a designation for two or more AWS data centers within a single geographic area?",
-        "answer": "Availability Zone."
+        "answer": "Availability Zone"
     },
     {
         "question": "How, using security best practices, should your organization’s team members access your AWS account resources?",
-        "answer": "Through the use of specially created users, groups, and roles, each given the fewest permissions necessary."
+        "answer": "Through the use of specially created users, groups, and roles, each given the fewest permissions necessary"
     },
     {
         "question": "Which describes a methodology that protects your organization’s data when it’s on-site locally, in transit to AWS, and stored on AWS?",
@@ -45,15 +45,15 @@
     },
     {
         "question": "Which is the primary benefit from using resource tags with your AWS assets?",
-        "answer": "Tags make it easier to identify and administrate running resources in a busy AWS account."
+        "answer": "Tags make it easier to identify and administrate running resources in a busy AWS account"
     },
     {
         "question": "What defines the base operating system and software stack that will be available for a new Elastic Compute Cloud (EC2) instance when it launches?",
-        "answer": "The Amazon Machine Image (AMI) you select."
+        "answer": "The Amazon Machine Image (AMI) you select"
     },
     {
         "question": "Which AWS compute service offers an administration experience that most closely resembles the way you would run physical servers in your own local data center?",
-        "answer": "Elastic Compute Cloud (EC2)."
+        "answer": "Elastic Compute Cloud (EC2)"
     },
     {
         "question": "Which AWS object storage service offers the lowest ongoing charges, but at the cost of some convenience?",
@@ -64,12 +64,12 @@
         "answer": "Saving to an AWS Snowball device"
     },
     {
-        "question": "Which of the following will provide the most reliable and scalable relational database experience on AWS?",
+        "question": "Which will provide the most reliable and scalable relational database experience on AWS?",
         "answer": "Relational Database Service (RDS)"
     },
     {
         "question": "What’s the best and simplest way to increase reliability of an RDS database instance?",
-        "answer": "Enable Multi-AZ."
+        "answer": "Enable Multi-AZ"
     },
     {
         "question": "How does AWS describe an isolated networking environment into which you can launch compute resources while closely controlling network access?",

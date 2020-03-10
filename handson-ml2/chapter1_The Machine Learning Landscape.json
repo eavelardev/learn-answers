@@ -49,7 +49,7 @@
     },
     {
         "question": "What do model-based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?",
-        "answer": " Model-based learning algorithms search for an optimal value for the model parameters such that the model will generalize well to new instances. We usually train such systems by minimizing a cost function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity if the model is regularized. To make predictions, we feed the new instance’s features into the model’s prediction function, using the parameter values found by the learning algorithm"
+        "answer": "Model-based learning algorithms search for an optimal value for the model parameters such that the model will generalize well to new instances. We usually train such systems by minimizing a cost function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity if the model is regularized. To make predictions, we feed the new instance’s features into the model’s prediction function, using the parameter values found by the learning algorithm"
     },
     {
         "question": "Can you name four of the main challenges in Machine Learning?",
@@ -61,7 +61,7 @@
     },
     {
         "question": "What is a test set, and why would you want to use it?",
-        "answer": " A test set is used to estimate the generalization error that a model will make on new instances, before the model is launched in production."
+        "answer": "A test set is used to estimate the generalization error that a model will make on new instances, before the model is launched in production."
     },
     {
         "question": "What is the purpose of a validation set?",

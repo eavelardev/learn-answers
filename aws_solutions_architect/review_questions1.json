@@ -45,19 +45,20 @@
     },
     {
         "question": "Simple WorkFlow (SWF) is ...",
-        "answer": "a tool for coordinating application tasks."
+        "answer": "a tool for coordinating application tasks"
     },
     {
         "question": "For data workloads requiring more speed and flexibility than a closely defined structure offers, which service should you choose?",
         "answer": "Amazon DynamoDB provides a NoSQL database service for workloads that can be more efficiently run without the relational schema of SQL database engines"
     },
     {
-        "question": "Which of the following is the correct endpoint address for an EC2 instance running in the AWS Ireland region?",
-        "answer": "ec2.eu-west-1.amazonaws.com, EC2 endpoints will always start with an ec2 prefix followed by the region designation."
+        "question": "Which is the correct endpoint address for an EC2 instance running in the AWS Ireland region?",
+        "answer": "ec2.eu-west-1.amazonaws.com",
+        "note": "EC2 endpoints will always start with an ec2 prefix followed by the region designation."
     },
     {
         "question": "What does the term availability zone refer to in AWS documentation?",
-        "answer": "One or more isolated physical data centers within an AWS region. Regions are geographic areas that contain multiple availability zones, subnets are IP address blocks that can be used within a zone to organize your networked resources, and there can be multiple data centers within an availability zone."
+        "answer": "One or more isolated physical data centers within an AWS region. Regions are geographic areas that contain multiple availability zones, subnets are IP address blocks that can be used within a zone to organize your networked resources, and there can be multiple data centers within an availability zone"
     },
     {
         "question": "Which AWS tool lets you organize your EC2 instances and configure their network connectivity and access control?",
@@ -85,7 +86,7 @@
     },
     {
         "question": "The AWS SDK is",
-        "answer": "for accessing resources programmatically,"
+        "answer": "for accessing resources programmatically."
     },
     {
         "question": "The AWS Console works ...",
@@ -99,4 +100,4 @@
         "question": "Your company needs direct access to AWS support for both development and IT team leaders. Which support plan should you purchase?",
         "answer": "The Business plan."
     }
-]    
+]
