@@ -40,10 +40,10 @@
         ],
         "answers": [
             {
-                "answer": "PostgreSQL"
+                "answer": 2
             },
             {
-                "answer": "Amazon Aurora"
+                "answer": 4
             }
         ]
     },
@@ -68,10 +68,10 @@
         ],
         "answers": [
             {
-                "answer": "MySQL"
+                "answer": 1
             },
             {
-                "answer": "PostgreSQL"
+                "answer": 2
             }
         ]
     },
@@ -96,10 +96,10 @@
         ],
         "answers": [
             {
-                "answer": "Multi-AZ"
+                "answer": 2
             },
             {
-                "answer": "Snapshots"
+                "answer": 3
             }
         ]
     },
@@ -129,10 +129,10 @@
         ],
         "answers": [
             {
-                "answer": "It’s backed by solid-state drives."
+                "answer": 2
             },
             {
-                "answer": "It’s replicated across multiple Availability Zones."
+                "answer": 4
             }
         ]
     },
@@ -165,10 +165,10 @@
         ],
         "answers": [
             {
-                "answer": "Increase write capacity units (WCU)"
+                "answer": 3
             },
             {
-                "answer": "Enable DynamoDB Auto Scaling"
+                "answer": 5
             }
         ]
     },

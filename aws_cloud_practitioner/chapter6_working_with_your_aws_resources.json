@@ -59,13 +59,13 @@
         ],
         "answers": [
             {
-                "answer": "JavaScript"
+                "answer": 2
             },
             {
-                "answer": "Java"
+                "answer": 4
             },
             {
-                "answer": "PHP"
+                "answer": 5
             }
         ]
     },
@@ -87,10 +87,10 @@
         ],
         "answers": [
             {
-                "answer": "AWS Mobile SDK for Unity"
+                "answer": 1
             },
             {
-                "answer": "AWS Mobile SDK for .NET and Xamarin"
+                "answer": 2
             }
         ]
     },
@@ -112,10 +112,10 @@
         ],
         "answers": [
             {
-                "answer": "JavaScript"
+                "answer": 1
             },
             {
-                "answer": "C++"
+                "answer": 2
             }
         ]
     },
@@ -137,10 +137,10 @@
         ],
         "answers": [
             {
-                "answer": "The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services."
+                "answer": 1
             },
             {
-                "answer": "The AWS CLI allows you to interact with AWS services from a terminal."
+                "answer": 2
             }
         ]
     },
@@ -164,7 +164,7 @@
                 "option": "A metric that exceeds a given threshold"
             }
         ],
-        "answers": "A metric that exceeds a given threshold"
+        "answers": 4
     },
     {
         "question": "Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Select TWO.)",
@@ -184,10 +184,10 @@
         ],
         "answers": [
             {
-                "answer": "Short Message Service (SMS) text message"
+                "answer": 1
             },
             {
-                "answer": "Simple Queue Service (SQS)"
+                "answer": 3
             }
         ]
     },
@@ -209,10 +209,10 @@
         ],
         "answers": [
             {
-                "answer": "It can send an SNS notification when an IAM user logs in to the AWS Management Console."
+                "answer": 3
             },
             {
-                "answer": "It can shut down an EC2 instance at a specific time."
+                "answer": 4
             }
         ]
     },
@@ -234,10 +234,10 @@
         ],
         "answers": [
             {
-                "answer": "Viewing an S3 bucket from the AWS Management Console"
+                "answer": 2
             },
             {
-                "answer": "Listing IAM users from the AWS Command Line Interface (CLI)"
+                "answer": 4
             }
         ]
     },
@@ -263,10 +263,10 @@
         ],
         "answers": [
             {
-                "answer": "Stream CloudTrail logs to CloudWatch Logs."
+                "answer": 1
             },
             {
-                "answer": "Create a trail to log S3 data events."
+                "answer": 4
             }
         ]
     },

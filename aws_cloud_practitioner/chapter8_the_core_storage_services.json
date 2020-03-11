@@ -24,10 +24,10 @@
         ],
         "answers": [
             {
-                "answer": "STANDARD_IA"
+                "answer": 1
             },
             {
-                "answer": "GLACIER"
+                "answer": 3
             }
         ]
     },
@@ -52,10 +52,10 @@
         ],
         "answers": [
             {
-                "answer": "EBS stores volumes."
+                "answer": 1
             },
             {
-                "answer": "S3 stores objects."
+                "answer": 4
             }
         ]
     },
@@ -80,13 +80,13 @@
         ],
         "answers": [
             {
-                "answer": "Deleting old object versions"
+                "answer": 1
             },
             {
-                "answer": "Moving objects to Glacier"
+                "answer": 2
             },
             {
-                "answer": "Deleting old objects"
+                "answer": 4
             }
         ]
     },
@@ -108,10 +108,10 @@
         ],
         "answers": [
             {
-                "answer": "Bucket policies"
+                "answer": 1
             },
             {
-                "answer": "Access control lists"
+                "answer": 2
             }
         ]
     },
@@ -139,10 +139,10 @@
         ],
         "answers": [
             {
-                "answer": "S3 Glacier."
+                "answer": 3
             },
             {
-                "answer": "Glacier is the most cost effective."
+                "answer": 4
             }
         ]
     },
@@ -176,10 +176,10 @@
         ],
         "answers": [
             {
-                "answer": "Tape gateway"
+                "answer": 2
             },
             {
-                "answer": "Volume gateway"
+                "answer": 4
             }
         ]
     },
@@ -211,16 +211,16 @@
         ],
         "answers": [
             {
-                "answer": "AWS Storage Gateway—file gateway"
+                "answer": 1
             },
             {
-                "answer": "iSCSI"
+                "answer": 2
             },
             {
-                "answer": "SMB"
+                "answer": 4
             },
             {
-                "answer": "AWS Storage Gateway—volume gateway"
+                "answer": 5
             }
         ]
     },
@@ -245,13 +245,13 @@
         ],
         "answers": [
             {
-                "answer": "Stored volumes asynchronously back up data to S3 as EBS snapshots."
+                "answer": 1
             },
             {
-                "answer": "Cached volumes locally store only a frequently used subset of data."
+                "answer": 3
             },
             {
-                "answer": "Cached volumes can be up to 32 TB in size."
+                "answer": 5
             }
         ]
     },
@@ -277,10 +277,10 @@
         ],
         "answers": [
             {
-                "answer": "It enforces encryption at rest."
+                "answer": 1
             },
             {
-                "answer": "It uses a Trusted Platform Module (TPM) chip."
+                "answer": 2
             }
         ]
     },
@@ -310,10 +310,10 @@
         ],
         "answers": [
             {
-                "answer": "Snowball Edge supports copying files using NFS."
+                "answer": 1
             },
             {
-                "answer": "Snowball Edge can run EC2 instances."
+                "answer": 4
             }
         ]
     },

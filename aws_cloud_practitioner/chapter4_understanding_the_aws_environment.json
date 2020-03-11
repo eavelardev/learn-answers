@@ -29,10 +29,10 @@
         ],
         "answers": [
             {
-                "answer": "Route 53"
+                "answer": 2
             },
             {
-                "answer": "CloudFront"
+                "answer": 4
             }
         ]
     },
@@ -98,10 +98,10 @@
         ],
         "answers": [
             {
-                "answer": "RDS"
+                "answer": 1
             },
             {
-                "answer": "Elastic Block Store (EBS)"
+                "answer": 3
             }
         ]
     },

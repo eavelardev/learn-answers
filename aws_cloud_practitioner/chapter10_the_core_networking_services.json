@@ -17,10 +17,10 @@
         ],
         "answers": [
             {
-                "answer": "AWS creates a default VPC in each region."
+                "answer": 2
             },
             {
-                "answer": "By default, each default VPC is available to one AWS account."
+                "answer": 4
             }
         ]
     },
@@ -40,7 +40,7 @@
                 "option": "10.0.0.0/15"
             }
         ],
-        "answer" : "10.0.0.0/28"
+        "answer" : 1
     },
     {
         "question" : "Which of the following are true regarding subnets? (Select TWO.)",
@@ -60,10 +60,10 @@
         ],
         "answers": [
             {
-                "answer": "A subnet must have a CIDR that’s a subset of the CIDR of the VPC in which it resides."
+                "answer": 2
             },
             {
-                "answer": "A subnet spans one Availability Zone."
+                "answer": 3
             }
         ]
     },
@@ -86,7 +86,7 @@
                 "option": "It contains an inbound rule denying access from any IP address."
             }
         ],
-        "answer" : "It contains an outbound rule allowing access to any IP address."
+        "answer" : 3
     },
     {
         "question" : "What’s the difference between a security group and a network access control list (NACL)? (Select TWO.)",
@@ -106,10 +106,10 @@
         ],
         "answers": [
             {
-                "answer": "A security group operates at the instance level."
+                "answer": 2
             },
             {
-                "answer": "A network access control list operates at the subnet level."
+                "answer": 4
             }
         ]
     },
@@ -129,7 +129,7 @@
                 "option": "It’s a virtual private network (VPN) connection between two VPCs."
             }
         ],
-        "answer" : "It’s a private connection between two VPCs."
+        "answer" : 2
     },
     {
         "question" : "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Select TWO.)",
@@ -149,10 +149,10 @@
         ],
         "answers": [
             {
-                "answer": "A Direct Connect connection offers predictable latency because it doesn’t traverse the internet."
+                "answer": 1
             },
             {
-                "answer": "A VPN connection uses the internet for transport."
+                "answer": 2
             }
         ]
     },
@@ -174,10 +174,10 @@
         ],
         "answers": [
             {
-                "answer": "You can register a domain name for a term of up to 10 years."
+                "answer": 2
             },
             {
-                "answer": "Route 53 creates a public hosted zone for the domain."
+                "answer": 4
             }
         ]
     },
@@ -243,10 +243,10 @@
         ],
         "answers": [
             {
-                "answer": "EC2 instance"
+                "answer": 1
             },
             {
-                "answer": "A public S3 bucket"
+                "answer": 2
             }
         ]
     }

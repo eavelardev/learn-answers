@@ -45,7 +45,7 @@
     },
     {
         "question": "Which configuration details cannot be changed on an existing EC2 instance?",
-        "answer": "AMI "
+        "answer": "AMI"
     },
     {
         "question": "For an account with multiple resources running as part of multiple projects, which would make for the most effective identification convention for resource tags?",
@@ -58,29 +58,5 @@
     {
         "question": "If you want to generate an AMI from an existing EBS volume, which steps will get you there?",
         "answer": "Create o import a snapshot of an EBS root volume you need and use it to create an image or create an image from the EBS volume attached to the instance, select your new AMI from your private collection, and launch it."
-    },
-    {
-        "question": "Which of the following are benefits of instance store volumes?",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
     }
 ]    

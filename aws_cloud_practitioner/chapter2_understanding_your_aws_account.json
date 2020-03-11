@@ -21,10 +21,10 @@
         ],
         "answers": [
             {
-                "answer": "A t2.micro instance type EC2 instance"
+                "answer": 2
             },
             {
-                "answer": "A 30 GB solid-state Elastic Block Store (EBS) drive"
+                "answer": 3
             }
         ]
     },
@@ -46,10 +46,10 @@
         ],
         "answers": [
             {
-                "answer": "10 GB of data retrievals from Amazon Glacier per month"
+                "answer": 2
             },
             {
-                "answer": "A 10 custom monitoring metrics and 10 alarms on Amazon CloudWatch"
+                "answer": 4
             }
         ]
     },
@@ -111,7 +111,7 @@
                 "option": "https://docs.aws.amazon.com/latest/gr/aws_service_limits.html"
             }
         ],
-        "answer": "https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html"
+        "answer": 2
     },
     {
         "question": "Which describes one possible reason for AWS service limits?",

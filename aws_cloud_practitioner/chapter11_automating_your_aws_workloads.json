@@ -21,10 +21,10 @@
         ],
         "answers": [
             {
-                "answer": "YAML"
+                "answer": 2
             },
             {
-                "answer": "JSON"
+                "answer": 4
             }
         ]
     },
@@ -50,10 +50,10 @@
         ],
         "answers": [
             {
-                "answer": "Resources CloudFormation creates are organized into stacks and can be managed as a single unit."
+                "answer": 1
             },
             {
-                "answer": "CloudFormation stack updates help ensure that changes to one resource won’t break another."
+                "answer": 2
             }
         ]
     },
@@ -75,10 +75,10 @@
         ],
         "answers": [
             {
-                "answer": "Versioning"
+                "answer": 1
             },
             {
-                "answer": "Differencing"
+                "answer": 3
             }
         ]
     },
@@ -111,10 +111,10 @@
         ],
         "answers": [
             {
-                "answer": "build.general1.medium"
+                "answer": 2
             },
             {
-                "answer": "build.general1.large"
+                "answer": 4
             }
         ]
     },
@@ -139,10 +139,10 @@
         ],
         "answers": [
             {
-                "answer": "An operating system"
+                "answer": 1
             },
             {
-                "answer": "A Docker image"
+                "answer": 2
             }
         ]
     },
@@ -167,13 +167,13 @@
         ],
         "answers": [
             {
-                "answer": "Deploy an application to an on-premises Windows instance."
+                "answer": 1
             },
             {
-                "answer": "Deploy a Docker container to the Elastic Container Service."
+                "answer": 2
             },
             {
-                "answer": "Upgrade an application on an EC2 instance running Red Hat Enterprise Linux."
+                "answer": 3
             }
         ]
     },
@@ -204,10 +204,10 @@
         ],
         "answers": [
             {
-                "answer": "Maximum"
+                "answer": 1
             },
             {
-                "answer": "Minimum"
+                "answer": 4
             }
         ]
     },
@@ -252,10 +252,10 @@
         ],
         "answers": [
             {
-                "answer": "Puppet Enterprise"
+                "answer": 2
             },
             {
-                "answer": "Chef"
+                "answer": 4
             }
         ]
     },

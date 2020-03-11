@@ -61,10 +61,10 @@
         ],
         "answers": [
             {
-                "answer": "https://aws.amazon.com/premiumsupport/knowledge-center"
+                "answer": 1
             },
             {
-                "answer": "https://docs.aws.amazon.com"
+                "answer": 3
             }
         ]
     },
@@ -96,7 +96,7 @@
                 "option": "Fault Tolerance"
             }
         ],
-        "answer": "Replication"
+        "answer": 3
     },
     {
         "question": "“Data volumes that aren’t properly backed up” is an example of which Trusted Advisor categories?",

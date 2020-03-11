@@ -28,9 +28,9 @@ def main():
     nlines, ncols = win.getmaxyx()
 
     skip_question = 0
-    pass_question = 1
+    restart_question = 1
     pass_answer = 2
-    quiz_complete = 3
+    no_pass_answer = 3
 
     def get_word():
         word = ''
@@ -42,8 +42,6 @@ def main():
                 word += ch
 
     def analyze_answer(answer, note):
-        # pass_answers = True
-        # for a, answer in enumerate(answers):
         answer_words = answer.split()
         in_word, state = get_word()
 
@@ -51,10 +49,9 @@ def main():
             if len(in_word) == 0:
                 return skip_question
             elif len(answer_words) > 1:
-                return
+                return no_pass_answer
 
-        pass_answer = None
-        # restart_question = False
+        pass_i_answer = None
         total_chrs = 0
         last_x = 0
 
@@ -67,8 +64,8 @@ def main():
 
             if in_word != answer_words[i]:
                 win.addstr('\n')
-                while True:
-                    if pass_answer is None:
+                while True: # practice answer
+                    if pass_i_answer is None:
                         for j in range(len(answer_words)):
                             if j == i:
                                 win.addstr(
@@ -83,8 +80,7 @@ def main():
                         win.addstr('\n')
                         if note:
                             win.addstr(note + '\n\n', curses.A_DIM)
-                        pass_answer = False
-                        pass_answers = False
+                        pass_i_answer = False
                     else:
                         win.addstr(' ' * (total_chrs % ncols))
                         win.addstr(
@@ -94,15 +90,12 @@ def main():
 
                     last_y, last_x = win.getyx()
                     if last_y > nlines - 3:
-                        return
-                        # return restart_question 
-                        # break
+                        return restart_question
 
                     in_word, state = get_word()
+
                     if state == '\n':
-                        return
-                        # return restart_question
-                        # break
+                        return restart_question
 
                     if in_word == answer_words[i]:
                         break
@@ -113,27 +106,22 @@ def main():
             if i < len(answer_words) - 1:
                 total_chrs += 1
 
-            if pass_answer is None and i == len(answer_words) - 1:
-                # win.addstr('\n')
-                return pass_answer
-                # break
-
             if i == len(answer_words) - 1:
-                return
+                if pass_i_answer is None:
+                    return pass_answer
+                else: 
+                    return no_pass_answer
 
             last_y, last_x = win.getyx()
+
             if last_y > nlines - 3:
-                return
+                return restart_question
+
             in_word, state = get_word()
 
             if state == '\n' and i < len(answer_words) - 2:
-                return
+                return restart_question
 
-            # if not pass_answer:
-            #     break
-
-        # if pass_answers:
-        #     return pass_question
 
     while True:
         if args.random and len(data) > 1:
@@ -144,6 +132,7 @@ def main():
                     break
 
         for q, question in enumerate(data):
+
             answers = question.get('answer')
             if answers is None:
                 answers = [answer.get('answer') for answer in question.get('answers')]
@@ -152,12 +141,14 @@ def main():
 
             options = question.get('options')
             if options is not None:
-                if len(answers) == 1: # print opts randomly when there is one answer
-                    random.shuffle(options) 
-
+                options = [option.get('option') for option in options]
+                answers = [options[answer-1] for answer in answers]
+                random.shuffle(options) # random order options
+                answers = [option for option in options if option in answers]
+    
             note = question.get('note')
+            complement = question.get('complement')
 
-            pass_answers = False
             i_answer = 0
 
             while True:
@@ -168,21 +159,30 @@ def main():
 
                 if options is not None:
                     for option in options:
-                        win.addstr('    • ' + option.get('option') + '\n')
+                        win.addstr('    • ' + option + '\n')
                     win.addstr('\n')
+
+                if i_answer == 0:
+                    pass_answers = True
 
                 if len(answers) > 1:
                     win.addstr(str(i_answer+1) + ". ")
 
                 answer_result = analyze_answer(answers[i_answer], note)
 
-                if answer_result == pass_answer:
+                if answer_result == no_pass_answer:
+                    pass_answers = False
+                elif answer_result == pass_answer:
                     if i_answer == len(answers) - 1:
-                        break
+                        if pass_answers:
+                            break
+                        else:
+                            i_answer = 0
                     else:
                         i_answer += 1
-
-                if answer_result == skip_question or answer_result == pass_question:
+                elif answer_result == restart_question:
+                    i_answer = 0
+                elif answer_result == skip_question:
                     break
 
         if not args.loop:

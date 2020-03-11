@@ -39,10 +39,10 @@
         ],
         "answers": [
             {
-                "answer": "Granting each AWS user their own IAM username and password"
+                "answer": 1
             },
             {
-                "answer": "Enabling S3 versioning"
+                "answer": 4
             }
         ]
     },
@@ -64,10 +64,10 @@
         ],
         "answers": [
             {
-                "answer": "Implementing policies to prevent the accidental termination of EC2 instances in the same Auto Scaling group"
+                "answer": 3
             },
             {
-                "answer": "Using CloudFront"
+                "answer": 4
             }
         ]
     },
@@ -89,10 +89,10 @@
         ],
         "answers": [
             {
-                "answer": "Deleting unused S3 objects"
+                "answer": 1
             },
             {
-                "answer": "Deleting unused application load balancers"
+                "answer": 3
             }
         ]
     },
@@ -143,10 +143,10 @@
         ],
         "answers": [
             {
-                "answer": "Objects in S3 are not public by default."
+                "answer": 1
             },
             {
-                "answer": "By default, S3 removes ACLs that allow public read access to objects."
+                "answer": 3
             }
         ]
     },
@@ -174,7 +174,7 @@
                 "option": "A website hosted on S3 is stored in multiple Regions."
             }
         ],
-        "answer": "The content served is not encrypted in transit."
+        "answer": 1
     },
     {
         "question": "Which of the following can impact the reliability of a web application running on EC2 instances?",
@@ -192,7 +192,7 @@
                 "option": "Provisioning too many instances."
             }
         ],
-        "answer": "Not replacing a misconfigured resource that the application depends on."
+        "answer": 3
     },
     {
         "question": "You have a public web application running on EC2 instances. Which of the following factors affecting the performance of your application might be out of your control?",

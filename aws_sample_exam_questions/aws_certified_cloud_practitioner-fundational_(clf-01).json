@@ -31,7 +31,7 @@
                 "option": "Managing custom Amazon Machine Images (AMIs)"
             }
         ],
-        "answer": "Maintaining physical hardware"
+        "answer": 2
     },
     {
         "question": "Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?",

@@ -21,13 +21,13 @@
         ],
         "answers": [
             {
-                "answer": "Require at least one uppercase letter."
+                "answer": 1
             },
             {
-                "answer": "Require at least one number."
+                "answer": 2
             },
             {
-                "answer": "Require at least one nonalphanumeric character."
+                "answer": 4
             }
         ]
     },
@@ -49,10 +49,10 @@
         ],
         "answers": [
             {
-                "answer": "Enable MFA."
+                "answer": 3
             },
             {
-                "answer": "Create a strong password."
+                "answer": 4
             }
         ]
     },
@@ -90,10 +90,10 @@
         ],
         "answers": [
             {
-                "answer": "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app."
+                "answer": 1
             },
             {
-                "answer": "You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS."
+                "answer": 4
             }
         ]
     },
@@ -115,10 +115,10 @@
         ],
         "answers": [
             {
-                "answer": "SAML 2.0"
+                "answer": 3
             },
             {
-                "answer": "Active Directory"
+                "answer": 4
             }
         ]
     },

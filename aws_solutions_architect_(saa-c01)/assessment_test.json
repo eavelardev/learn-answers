@@ -1,11 +1,13 @@
 [
     {
         "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
-        "answer": "False, the Business plan offers access to a support API, but the Developer plan does not"
+        "answer": "False",
+        "complement": "The Business plan offers access to a support API, but the Developer plan does not"
     },
     {
-        "question": "True/false: The Developer Support plan provides access to a support application programming interface (API).",
-        "answer": "False, customers are responsible for managing the network configuration of EC2 instances. AWS is responsible for the physical network infrastructure"
+        "question": "True/false: AWS is responsible for managing the network",
+        "answer": "False",
+        "complement": "Customers are responsible for managing the network configuration of EC2 instances. AWS is responsible for the physical network infrastructure"
     },
     {
         "question": "Which service is most useful for decoupling the components of a monolithic application?",
@@ -17,11 +19,13 @@
     },
     {
         "question": "True/false: Changing the instance type of an EC2 instance will change its elastic IP address.",
-        "answer": "False, an elastic IP address will not change. A public IP address attached to an instance will change if the instance is stopped, as would happen when changing the instance type"
+        "answer": "False",
+        "complement": "An elastic IP address will not change. A public IP address attached to an instance will change if the instance is stopped, as would happen when changing the instance type"
     },
     {
         "question": "True/false: You can use a Quick Start Amazon Machine Image (AMI) to create any instance type.",
-        "answer": "True, a Quick Start AMI is independent of the instance type"
+        "answer": "True",
+        "complement": "A Quick Start AMI is independent of the instance type"
     },
     {
         "question": "Which S3 encryption option does not require AWS persistently storing the encryption keys it uses to decrypt data?",
@@ -29,11 +33,13 @@
     },
     {
         "question": "True/false: Durability measures the percentage of likelihood that a given object will not be inadvertently lost by AWS over the course of a year.",
-        "answer": "True, durability corresponds to an average annual expected loss of objects stored on S3, not including objects you delete. Availability measures the amount of time S3 will be available to let you retrieve those objects"
+        "answer": "True",
+        "complement": "Durability corresponds to an average annual expected loss of objects stored on S3, not including objects you delete. Availability measures the amount of time S3 will be available to let you retrieve those objects"
     },
     {
         "question": "True/false: After uploading a new object to S3, there will be a slight delay (one to two seconds) before the object is available.",
-        "answer": "False, S3 uses a read-after-write consistency model for new objects, so once you upload an object to S3, it’s immediately available"
+        "answer": "False",
+        "complement": "S3 uses a read-after-write consistency model for new objects, so once you upload an object to S3, it’s immediately available"
     },
     {
         "question": "You created a Virtual Private Cloud (VPC) using the Classless Inter-Domain Routing (CIDR) block 10.0.0.0/24. You need to connect to this VPC from your internal network, but the IP addresses in use on your internal network overlap with the CIDR. Which is a valid way to address this problem?",
@@ -41,11 +47,13 @@
     },
     {
         "question": "True/false: An EC2 instance must be in a public subnet to access the internet.?",
-        "answer": "False, an EC2 instance can access the Internet from a private subnet provided it uses a NAT gateway or NAT instance."
+        "answer": "False",
+        "complement": "An EC2 instance can access the Internet from a private subnet provided it uses a NAT gateway or NAT instance."
     },
     {
         "question": "True/false: The route table for a public subnet must have a default route pointing to an Internet gateway as a target.",
-        "answer": "True, the definition of a public subnet is a subnet that has a default route pointing to an Internet gateway as a target. Otherwise , it’s a private subnet"
+        "answer": "True",
+        "complement": "The definition of a public subnet is a subnet that has a default route pointing to an Internet gateway as a target. Otherwise , it’s a private subnet"
     },
     {
         "question": "Which use case is well suited for DynamoDB?",
@@ -53,11 +61,13 @@
     },
     {
         "question": "True/false: You can create a DynamoDB global secondary index for an existing table at any time.",
-        "answer": "True, you can create a global secondary index for an existing table at any time. You can create a local secondary index only when you create the table"
+        "answer": "True",
+        "complement": "You can create a global secondary index for an existing table at any time. You can create a local secondary index only when you create the table"
     },
     {
         "question": "True/false: Enabling point-in-time RDS snapshots is sufficient to give you a recovery point objective (RPO) of less than 10 minutes.",
-        "answer": "True, enabling point-in-time recovery gives you an RPO of about five minutes. The recovery time objective (RTO) depends on the amount of data to restore"
+        "answer": "True",
+        "complement": "Enabling point-in-time recovery gives you an RPO of about five minutes. The recovery time objective (RTO) depends on the amount of data to restore"
     },
     {
         "question": "Which step does the most to protect your AWS account?",
@@ -73,7 +83,8 @@
     },
     {
         "question": "True/false: EC2 sends instance memory utilization metrics to CloudWatch every five minutes.",
-        "answer": "False, EC2 doesn’t track instance memory utilization."
+        "answer": "False",
+        "complement": "EC2 doesn’t track instance memory utilization."
     },
     {
         "question": "You configured a CloudWatch alarm to monitor CPU utilization for an EC2 instance. The alarm began in the INSUFFICIENT_DATA state and then entered the ALARM state. What can you conclude from this?",
@@ -85,7 +96,8 @@
     },
     {
         "question": "True/false: An EC2 instance in a private subnet can resolve an “A” resource record for a public hosted zone hosted in Route 53.",
-        "answer": "True, an EC2 instance in a private subnet still has access to Amazon’s private DNS servers , which can resolve records stored in public hosted zones."
+        "answer": "True",
+        "complement": "An EC2 instance in a private subnet still has access to Amazon’s private DNS servers , which can resolve records stored in public hosted zones."
     },
     {
         "question": "You want to use Route 53 to send users to the application load balancer closest to them. Which policie lets you do this with the least effort?",
@@ -93,7 +105,8 @@
     },
     {
         "question": "True/false: You can use an existing domain name with Route 53 without switching its registration to AWS.",
-        "answer": "True, Route 53 is a true DNS service in that it can host zones for any domain name. You can also register domain names with or transfer them to Route 53."
+        "answer": "True",
+        "complement": "Route 53 is a true DNS service in that it can host zones for any domain name. You can also register domain names with or transfer them to Route 53."
     },
     {
         "question": "You’re designing an application that takes multiple image files and combines them into a video file that users on the Internet can download. Which can help you quickly implement your application in the fastest, most highly available, and most cost-effective manner?",
@@ -105,7 +118,8 @@
     },
     {
         "question": "True/false: EC2 Auto Scaling automatically replaces group instances directly terminated by the root user.?",
-        "answer": "True, Auto Scaling always attempts to maintain the minimum group size or, if set, the desired capacity."
+        "answer": "True",
+        "complement": "Auto Scaling always attempts to maintain the minimum group size or, if set, the desired capacity."
     },
     {
         "question": "Which ElastiCache engine can persistently store data?",
@@ -127,11 +141,12 @@
                 "option": "Snowball"
             }
         ],
-        "answer": "Puppet."
+        "answer": 2
     },
     {
         "question": "True/false: S3 cross-region replication uses transfer acceleration.",
-        "answer": "False, S3 cross-region replication transfers objects between different buckets. Transfer acceleration uses a CloudFront edge location to speed up transfers between S3 and the Internet."
+        "answer": "False",
+        "complement": "S3 cross-region replication transfers objects between different buckets. Transfer acceleration uses a CloudFront edge location to speed up transfers between S3 and the Internet."
     },
     {
         "question": "Which service can you deactivate on your account?",
@@ -143,7 +158,8 @@
     },
     {
         "question": "True/false: If versioning is enabled on an S3 bucket, applying encryption to an unencrypted object in that bucket will create a new, encrypted version of that object.",
-        "answer": "True, applying encryption to an unencrypted object will create a new, encrypted version of that object. Previous versions remain unencrypted."
+        "answer": "True",
+        "complement": "Applying encryption to an unencrypted object will create a new, encrypted version of that object. Previous versions remain unencrypted."
     },
     {
         "question": "Which instance type will, if left running, continue to incur costs?",
@@ -151,7 +167,8 @@
     },
     {
         "question": "True/false: The EBS Lifecycle Manager can take snapshots of volumes that were once attached to terminated instances.",
-        "answer": "True, the EBS Lifecycle Manager can take scheduled snapshots of any EBS volume, regardless of attachment state."
+        "answer": "True",
+        "complement": "The EBS Lifecycle Manager can take scheduled snapshots of any EBS volume, regardless of attachment state."
     },
     {
         "question": "Which lets you spin up new web servers the quickest?",
@@ -159,7 +176,8 @@
     },
     {
         "question": "True/false: CloudFormation stack names are case-sensitive.",
-        "answer": "True."
+        "answer": "True",
+        "complement": "Almost everything in CloudFormation is case sensitive."
     },
     {
         "question": "Where might CodeDeploy look for the appspec.yml file?",
@@ -167,6 +185,7 @@
     },
     {
         "question": "True/false: You can use either CodeDeploy or an AWS Systems Manager command document to deploy a Lambda application.",
-        "answer": "False, you can use CodeDeploy to deploy an application to Lambda or EC2 instances. But an AWS Systems Manager command document works only on EC2 instances."
+        "answer": "False",
+        "complement": "You can use CodeDeploy to deploy an application to Lambda or EC2 instances. But an AWS Systems Manager command document works only on EC2 instances."
     }
 ]
