@@ -4,7 +4,7 @@
         "answer": "Use a globally unique bucket name."
     },
     {
-        "question": "Which S3 storage classes are most cost-effective for infrequently accessed data that can’t be easily replaced? (Select TWO.)",
+        "question": "Which S3 storage classes are most cost-effective for infrequently accessed data that can’t be easily replaced? (Type TWO.)",
         "options": [
             {
                 "option": "STANDARD_IA"
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "question": "What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Select TWO.)",
+        "question": "What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Type TWO.)",
         "options": [
             {
                 "option": "EBS stores volumes."
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "question": "Which tasks can S3 object life cycle configurations perform automatically? (Select THREE.)",
+        "question": "Which tasks can S3 object life cycle configurations perform automatically? (Type THREE.)",
         "options": [
             {
                 "option": "Deleting old object versions"
@@ -91,7 +91,7 @@
         ]
     },
     {
-        "question": "What methods can be used to grant anonymous access to an object in S3? (Select TWO.)",
+        "question": "What methods can be used to grant anonymous access to an object in S3? (Type TWO.)",
         "options": [
             {
                 "option": "Bucket policies"
@@ -116,7 +116,7 @@
         ]
     },
     {
-        "question": "Your budget-conscious organization has a 5 TB database file it needs to retain off-site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage option should you recommend, and why? (Select TWO.)",
+        "question": "Your budget-conscious organization has a 5 TB database file it needs to retain off-site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage option should you recommend, and why? (Type TWO.)",
         "options": [
             {
                 "option": "S3 has the most durable storage."
@@ -159,7 +159,7 @@
         "answer": "1 byte"
     },
     {
-        "question": "Which types of AWS Storage Gateway let you connect your servers to block storage using the iSCSI protocol? (Select TWO.)",
+        "question": "Which types of AWS Storage Gateway let you connect your servers to block storage using the iSCSI protocol? (Type TWO.)",
         "options": [
             {
                 "option": "Cached gateway"
@@ -188,7 +188,7 @@
         "answer": "S3 buckets"
     },
     {
-        "question": "You need an easy way to transfer files from a server in your data center to S3 without having to install any third-party software. Which of the following services and storage protocols could you use? (Select FOUR.)",
+        "question": "You need an easy way to transfer files from a server in your data center to S3 without having to install any third-party software. Which of the following services and storage protocols could you use? (Type FOUR.)",
         "options": [
             {
                 "option": "AWS Storage Gateway—file gateway"
@@ -225,7 +225,7 @@
         ]
     },
     {
-        "question": "Which of the following are true regarding the AWS Storage Gateway—volume gateway configuration? (Select THREE.)",
+        "question": "Which of the following are true regarding the AWS Storage Gateway—volume gateway configuration? (Type THREE.)",
         "options": [
             {
                 "option": "Stored volumes asynchronously back up data to S3 as EBS snapshots."
@@ -260,7 +260,7 @@
         "answer": "72 TB"
     },
     {
-        "question": "Which of the following are security features of AWS Snowball? (Select TWO.)",
+        "question": "Which of the following are security features of AWS Snowball? (Type TWO.)",
         "options": [
             {
                 "option": "It enforces encryption at rest."
@@ -293,7 +293,7 @@
         "answer": "The Snowball Client"
     },
     {
-        "question": "How do the AWS Snowball and Snowball Edge devices differ? (Select TWO.)",
+        "question": "How do the AWS Snowball and Snowball Edge devices differ? (Type TWO.)",
         "options": [
             {
                 "option": "Snowball Edge supports copying files using NFS."

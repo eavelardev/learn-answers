@@ -1,6 +1,6 @@
 [
     {
-        "question" : "Which of the following are true of a default VPC? (Select TWO.)",
+        "question" : "Which of the following are true of a default VPC? (Type TWO.)",
         "options": [
             {
                 "option": "A default VPC spans multiple regions."
@@ -43,7 +43,7 @@
         "answer" : 1
     },
     {
-        "question" : "Which of the following are true regarding subnets? (Select TWO.)",
+        "question" : "Which of the following are true regarding subnets? (Type TWO.)",
         "options": [
             {
                 "option": "A VPC must have at least two subnets."
@@ -89,7 +89,7 @@
         "answer" : 3
     },
     {
-        "question" : "What’s the difference between a security group and a network access control list (NACL)? (Select TWO.)",
+        "question" : "What’s the difference between a security group and a network access control list (NACL)? (Type TWO.)",
         "options": [
             {
                 "option": "A network access control list operates at the instance level."
@@ -132,7 +132,7 @@
         "answer" : 2
     },
     {
-        "question" : "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Select TWO.)",
+        "question" : "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Type TWO.)",
         "options": [
             {
                 "option": "A Direct Connect connection offers predictable latency because it doesn’t traverse the internet."
@@ -157,7 +157,7 @@
         ]
     },
     {
-        "question" : "Which of the following are true about registering a domain name with Route 53? (Select TWO.)",
+        "question" : "Which of the following are true about registering a domain name with Route 53? (Type TWO.)",
         "options": [
             {
                 "option": "The registrar you use to register a domain name determines who will host DNS for that domain."
@@ -226,7 +226,7 @@
         "answer" : "More than 150"
     },
     {
-        "question" : "Which of the following are valid origins for a CloudFront distribution? (Select TWO.)",
+        "question" : "Which of the following are valid origins for a CloudFront distribution? (Type TWO.)",
         "options": [
             {
                 "option": "EC2 instance"

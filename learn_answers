@@ -41,7 +41,13 @@ def main():
             if ch.isprintable():
                 word += ch
 
-    def analyze_answer(answer, note):
+    def analyze_answer(i_answer, answers, note):
+        pre_ans = ''
+        if len(answers) > 1:
+            pre_ans = str(i_answer+1) + ". "
+            win.addstr(pre_ans)
+
+        answer = answers[i_answer]
         answer_words = answer.split()
         in_word, state = get_word()
 
@@ -65,6 +71,8 @@ def main():
             if in_word != answer_words[i]:
                 win.addstr('\n')
                 while True: # practice answer
+                    win.addstr(' ' * len(pre_ans))
+
                     if pass_i_answer is None:
                         for j in range(len(answer_words)):
                             if j == i:
@@ -78,6 +86,7 @@ def main():
                                 win.addstr(' ', curses.A_UNDERLINE)
 
                         win.addstr('\n')
+
                         if note:
                             win.addstr(note + '\n\n', curses.A_DIM)
                         pass_i_answer = False
@@ -86,7 +95,8 @@ def main():
                         win.addstr(
                             answer_words[i] + '\n', curses.A_STANDOUT)
 
-                    win.addstr(answer[total_chrs - last_x: total_chrs])
+                    win.addstr(pre_ans)
+                    win.addstr(answer[len(pre_ans) + total_chrs - last_x: total_chrs])
 
                     last_y, last_x = win.getyx()
                     if last_y > nlines - 3:
@@ -165,10 +175,7 @@ def main():
                 if i_answer == 0:
                     pass_answers = True
 
-                if len(answers) > 1:
-                    win.addstr(str(i_answer+1) + ". ")
-
-                answer_result = analyze_answer(answers[i_answer], note)
+                answer_result = analyze_answer(i_answer, answers, note)
 
                 if answer_result == no_pass_answer:
                     pass_answers = False

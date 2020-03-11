@@ -1,0 +1,148 @@
+[
+    {
+        "question": "Which does not contribute significantly to the operational value of a large cloud provider like AWS?",
+        "options" : [
+            {
+                "option" : "Multiregional presence"
+            },
+            {
+                "option" : "Highly experienced teams of security engineers"
+            },
+            {
+                "option" : "Deep experience in the retail sphere"
+            },
+            {
+                "option" : "Metered, pay-per-use pricing"
+            }
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following are signs of a highly available application? (Type TWO.)",
+        "options" : [
+            {
+                "option" : "A failure in one geographic region will trigger an automatic failover to resources in a different region."
+            },
+            {
+                "option" : "Applications are protected behind multiple layers of security."
+            },
+            {
+                "option" : "Virtualized hypervisor-driven systems are deployed as mandated by company policy."
+            },
+            {
+                "option" : "Spikes in user demand are met through automatically increasing resources."
+            }
+        ],
+        "answers": [
+            {
+                "answer" : 1
+            },
+            {
+                "answer" : 4
+            }
+        ]
+    },
+    {
+        "question": "How does the metered payment model make many benefits of cloud computing possible? (Type TWO.)",
+        "options" : [
+            {
+                "option" : "Greater application security is now possible."
+            },
+            {
+                "option" : "Experiments with multiple configuration options are now cost-effective."
+            },
+            {
+                "option" : "Applications are now highly scalable."
+            },
+            {
+                "option" : "Full-stack applications are possible without the need to invest in capital expenses."
+            }
+        ],
+        "answers": [
+            {
+                "answer" : 2
+            },
+            {
+                "answer" : 4
+            }
+        ]
+    },
+    {
+        "question": "Which of the following are direct benefits of server virtualization? (Type TWO.)",
+        "options" : [
+            {
+                "option" : "Fast resource provisioning and launching"
+            },
+            {
+                "option" : "Efficient (high-density) use of resources"
+            },
+            {
+                "option" : "Greater application security"
+            },
+            {
+                "option" : "Elastic application designs"
+            }
+        ],
+        "answers": [
+            {
+                "answer" : 1
+            },
+            {
+                "answer" : 2
+            }
+        ]
+    },
+    {
+        "question": "What is a hypervisor?",
+        "answer": "Software used to administrate virtualized resources run on physical infrastructure"
+    },
+    {
+        "question": "Describe server virtualization?",
+        "answer": "Logically partitioning physical compute and storage devices into multiple smaller virtual devices"
+    },
+    {
+        "question": "Describe Infrastructure as a Service products?",
+        "answer": "Services that give you direct control over underlying compute and storage resources"
+    },
+    {
+        "question": "Describe Platform as a Service products?",
+        "answer": "Services that hide infrastructure complexity behind a simple interface"
+    },
+    {
+        "question": "Describe Software as a Service products?",
+        "answer": "Services that provide a service to end users through a public network"
+    },
+    {
+        "question": "Describe scalability?",
+        "answer": "The ability of an application to automatically add preconfigured compute resources to meet increasing demand"
+    },
+    {
+        "question": "Describe elasticity?",
+        "answer": "The ability of an application to increase or decrease compute resources to match changing demand"
+    },
+    {
+        "question": "Which of the following characteristics most help AWS provide such scalable services? (Type TWO.)",
+        "options" : [
+            {
+                "option" : "The enormous number of servers it operates"
+            },
+            {
+                "option" : "The value of its capitalized assets"
+            },
+            {
+                "option" : "Its geographic reach"
+            },
+            {
+                "option" : "Its highly automated infrastructure administration systems"
+            }
+        ],
+        "answers": [
+            {
+                "answer" : 1
+            },
+            {
+                "answer" : 4
+            }
+        ]
+    }
+]    

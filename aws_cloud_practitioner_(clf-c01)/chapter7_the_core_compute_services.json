@@ -8,7 +8,7 @@
         "answer": "AWS Marketplace"
     },
     {
-        "question": "Which of the following could be included in an EC2 AMI? (Select TWO.)",
+        "question": "Which of the following could be included in an EC2 AMI? (Type TWO.)",
         "options": [
             {
                 "option": "A networking configuration"
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "question": "Which of the following are EC2 instance type families? (Select TWO.)",
+        "question": "Which of the following are EC2 instance type families? (Type TWO.)",
         "options": [
             {
                 "option": "c5d.18xlarge"
@@ -84,7 +84,7 @@
         "answer": "A virtualized partition of a physical storage drive that’s not directly connected to the EC2 instance it’s associated with"
     },
     {
-        "question": "Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Select TWO.)",
+        "question": "Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Type TWO.)",
         "options": [
             {
                 "option": "Instance store volumes can be encrypted."
@@ -121,7 +121,7 @@
         "answer": "Charges for any instances you run matching the reserved instance type will be covered by the reservation."
     },
     {
-        "question": "Which of the following use cases are good candidates for spot instances? (Select TWO.)",
+        "question": "Which of the following use cases are good candidates for spot instances? (Type TWO.)",
         "options": [
             {
                 "option": "Big data processing workloads"
@@ -146,7 +146,7 @@
         ]
     },
     {
-        "question": "Which AWS services simplify the process of bringing web applications to deployment? (Select TWO.)",
+        "question": "Which AWS services simplify the process of bringing web applications to deployment? (Type TWO.)",
         "options": [
             {
                 "option": "Elastic Block Store"
@@ -175,7 +175,7 @@
         "answer": "Lightsail"
     },
     {
-        "question": "Which of these stacks are available from Lightsail blueprints? (Select TWO.)",
+        "question": "Which of these stacks are available from Lightsail blueprints? (Type TWO.)",
         "options": [
             {
                 "option": "Ubuntu"
@@ -200,7 +200,7 @@
         ]
     },
     {
-        "question": "Which of these AWS services use primarily EC2 resources under the hood? (Select TWO.)",
+        "question": "Which of these AWS services use primarily EC2 resources under the hood? (Type TWO.)",
         "options": [
             {
                 "option": "Elastic Block Store"
@@ -225,7 +225,7 @@
         ]
     },
     {
-        "question": "Which of the following AWS services are designed to let you deploy Docker containers? (Select TWO.)",
+        "question": "Which of the following AWS services are designed to let you deploy Docker containers? (Type TWO.)",
         "options": [
             {
                 "option": "Elastic Container Service"
@@ -250,7 +250,7 @@
         ]
     },
     {
-        "question": "Which of the following use container technologies? (Select TWO.)",
+        "question": "Which of the following use container technologies? (Type TWO.)",
         "options": [
             {
                 "option": "Docker"

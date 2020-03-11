@@ -4,7 +4,7 @@
         "answer": "It lets you create multiple separate AWS environments using a single template."
     },
     {
-        "question": "What formats do CloudFormation templates support? (Select TWO.)",
+        "question": "What formats do CloudFormation templates support? (Type TWO.)",
         "options": [
             {
                 "option": "XML"
@@ -33,7 +33,7 @@
         "answer": "Allow customizing a stack without changing the template."
     },
     {
-        "question": "Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Select TWO.)",
+        "question": "Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Type TWO.)",
         "options": [
             {
                 "option": "Resources CloudFormation creates are organized into stacks and can be managed as a single unit."
@@ -58,7 +58,7 @@
         ]
     },
     {
-        "question": "What are two features of CodeCommit? (Select TWO.)",
+        "question": "What are two features of CodeCommit? (Type TWO.)",
         "options": [
             {
                 "option": "Versioning"
@@ -91,7 +91,7 @@
         "answer": "Continuous integration"
     },
     {
-        "question": "Which CodeBuild build environment compute types support Windows operating systems? (Select TWO.)",
+        "question": "Which CodeBuild build environment compute types support Windows operating systems? (Type TWO.)",
         "options": [
             {
                 "option": "build.general2.large"
@@ -119,7 +119,7 @@
         ]
     },
     {
-        "question": "What does a CodeBuild environment always contain? (Select TWO.)",
+        "question": "What does a CodeBuild environment always contain? (Type TWO.)",
         "options": [
             {
                 "option": "An operating system"
@@ -147,7 +147,7 @@
         ]
     },
     {
-        "question": "Which of the following can CodeDeploy do? (Select THREE.)",
+        "question": "Which of the following can CodeDeploy do? (Type THREE.)",
         "options": [
             {
                 "option": "Deploy an application to an on-premises Windows instance."
@@ -187,7 +187,7 @@
         "answer": "Launch template"
     },
     {
-        "question": "What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Select TWO.)",
+        "question": "What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Type TWO.)",
         "options": [
             {
                 "option": "Maximum"
@@ -232,7 +232,7 @@
         "answer": "AWS OpsWorks Stacks"
     },
     {
-        "question": "What configuration management platforms does OpsWorks support? (Select TWO.)",
+        "question": "What configuration management platforms does OpsWorks support? (Type TWO.)",
         "options": [
             {
                 "option": "SaltStack"

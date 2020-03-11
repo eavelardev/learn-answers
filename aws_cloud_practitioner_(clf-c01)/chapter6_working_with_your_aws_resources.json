@@ -20,7 +20,7 @@
         "answer": "A secret key"
     },
     {
-        "question": "Which of the following are options for installing the AWS CLI on Windows 10? (Select TWO.)",
+        "question": "Which of the following are options for installing the AWS CLI on Windows 10? (Type TWO.)",
         "answers": [
             {
                 "answer": "The MSI installer"
@@ -39,7 +39,7 @@
         "answer": "JavaScript object notation (JSON)"
     },
     {
-        "question": "Which of the following programming languages are AWS software development kits available for? (Select THREE.)",
+        "question": "Which of the following programming languages are AWS software development kits available for? (Type THREE.)",
         "options": [
             {
                 "option": "Fortran"
@@ -70,7 +70,7 @@
         ]
     },
     {
-        "question": "Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Select TWO.)",
+        "question": "Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Type TWO.)",
         "options": [
             {
                 "option": "AWS Mobile SDK for Unity"
@@ -95,7 +95,7 @@
         ]
     },
     {
-        "question": "Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Select TWO.)",
+        "question": "Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Type TWO.)",
         "options": [
             {
                 "option": "JavaScript"
@@ -120,7 +120,7 @@
         ]
     },
     {
-        "question": "What’s the difference between the AWS Command Line Interface (CLI) and the AWS software development kits (SDK)? (Select TWO.)",
+        "question": "What’s the difference between the AWS Command Line Interface (CLI) and the AWS software development kits (SDK)? (Type TWO.)",
         "options": [
             {
                 "option": "The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services."
@@ -167,7 +167,7 @@
         "answers": 4
     },
     {
-        "question": "Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Select TWO.)",
+        "question": "Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Type TWO.)",
         "options": [
             {
                 "option": "Short Message Service (SMS) text message"
@@ -192,7 +192,7 @@
         ]
     },
     {
-        "question": "Which of the following are true regarding CloudWatch Events? (Select TWO.)",
+        "question": "Which of the following are true regarding CloudWatch Events? (Type TWO.)",
         "options": [
             {
                 "option": "It can reboot an EC2 instance when an error appears in a log file."
@@ -217,7 +217,7 @@
         ]
     },
     {
-        "question": "Which of the following trigger an API action? (Select TWO.)",
+        "question": "Which of the following trigger an API action? (Type TWO.)",
         "options": [
             {
                 "option": "Configuring the AWS Command Line Interface (CLI)"
@@ -246,7 +246,7 @@
         "answer": "Use CloudTrail event history."
     },
     {
-        "question": "You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What’s the most cost-effective way to do this? (Select TWO.)",
+        "question": "You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What’s the most cost-effective way to do this? (Type TWO.)",
         "options": [
             {
                 "option": "Stream CloudTrail logs to CloudWatch Logs."

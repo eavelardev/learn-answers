@@ -12,25 +12,25 @@ I think that one of the best ways to learn new things is through repetition, for
 example
 
 ```
-./learn_answers -f handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
+./learn_answers -f aws_cloud_practitioner_\(clf-c01\)/chapter1_the_cloud.json
 ```
 
 to choosing random questions add `-r` argument
 
 ```
-./learn_answers -rf handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
+./learn_answers -rf aws_cloud_practitioner_\(clf-c01\)/chapter1_the_cloud.json
 ```
 
 to ask questions forever add `-l` argument
 
 ```
-./learn_answers -lf handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
+./learn_answers -lf aws_cloud_practitioner_\(clf-c01\)/chapter1_the_cloud.json
 ```
 
 to choosing random questions and to ask questions forever add `-rl` argument
 
 ```
-./learn_answers -rlf handson-ml2/chapter1_The\ Machine\ Learning\ Landscape.json
+./learn_answers -rlf aws_cloud_practitioner_\(clf-c01\)/chapter1_the_cloud.json
 ```
 
 ## Mobile apps

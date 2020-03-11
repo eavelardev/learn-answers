@@ -22,7 +22,7 @@
         "complement": "The five pillars of the Well-Architected Framework are reliability, performance efficiency, security, cost optimization, and operational excellence."
     },
     {
-        "question": "Which of the following are examples of applying the principles of the security pillar of the Well-Architected Framework? (Select TWO.)",
+        "question": "Which of the following are examples of applying the principles of the security pillar of the Well-Architected Framework? (Type TWO.)",
         "options": [
             {
                 "option": "Granting each AWS user their own IAM username and password"
@@ -47,7 +47,7 @@
         ]
     },
     {
-        "question": "You’re hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Select TWO.)",
+        "question": "You’re hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Type TWO.)",
         "options": [
             {
                 "option": "Monitoring for unauthorized access"
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "question": "Which of the following can help achieve cost optimization? (Select TWO.)",
+        "question": "Which of the following can help achieve cost optimization? (Type TWO.)",
         "options": [
             {
                 "option": "Deleting unused S3 objects"
@@ -126,7 +126,7 @@
         "answer": "A website hosted on S3"
     },
     {
-        "question": "Which of the following features of S3 improve the security of data you store in an S3 bucket? (Select TWO.)",
+        "question": "Which of the following features of S3 improve the security of data you store in an S3 bucket? (Type TWO.)",
         "options": [
             {
                 "option": "Objects in S3 are not public by default."

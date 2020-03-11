@@ -20,7 +20,7 @@
         "answer": "Elastic Block Store (EBS) volumes"
     },
     {
-        "question" : "Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Select TWO.)",
+        "question" : "Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Type TWO.)",
         "options": [
             {
                 "option": "IBM dBase"
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "question" : "What two databases is Amazon Aurora compatible with? (Select TWO.)",
+        "question" : "What two databases is Amazon Aurora compatible with? (Type TWO.)",
         "options": [
             {
                 "option": "MySQL"
@@ -76,7 +76,7 @@
         ]
     },
     {
-        "question" : "Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an Availability Zone failure? (Select TWO.)",
+        "question" : "Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an Availability Zone failure? (Type TWO.)",
         "options": [
             {
                 "option": "Read replicas"
@@ -112,7 +112,7 @@
         "answer": "Multi-AZ"
     },
     {
-        "question" : "What is true regarding a DynamoDB partition? (Select TWO.)",
+        "question" : "What is true regarding a DynamoDB partition? (Type TWO.)",
         "options": [
             {
                 "option": "It’s stored within a table."
@@ -145,7 +145,7 @@
         "answer": "Items in a table don’t have to have all the same attributes."
     },
     {
-        "question" : "Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Select TWO.)",
+        "question" : "Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Type TWO.)",
         "options": [
             {
                 "option": "Decrease read capacity units (RCU)"

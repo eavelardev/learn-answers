@@ -4,7 +4,7 @@
         "answer": "Identity and access management"
     },
     {
-        "question": "Which of the following are requirements you can include in an IAM password policy? (Select THREE.)",
+        "question": "Which of the following are requirements you can include in an IAM password policy? (Type THREE.)",
         "options": [
             {
                 "option": "Require at least one uppercase letter."
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "question": "Which of the following should you do to secure your AWS root user? (Select TWO.)",
+        "question": "Which of the following should you do to secure your AWS root user? (Type TWO.)",
         "options": [
             {
                 "option": "Assign the root user to the “admins” IAM group."
@@ -73,7 +73,7 @@
         "answer": "Permissions granted a trusted entity over specified AWS resources"
     },
     {
-        "question": "How can federated identities be incorporated into AWS workflows? (Select TWO.)",
+        "question": "How can federated identities be incorporated into AWS workflows? (Type TWO.)",
         "options": [
             {
                 "option": "You can provide users authenticated through a third-party identity provider access to backend resources used by your mobile app."
@@ -98,7 +98,7 @@
         ]
     },
     {
-        "question": "Which of the following are valid third-party federated identity standards? (Select TWO.)",
+        "question": "Which of the following are valid third-party federated identity standards? (Type TWO.)",
         "options": [
             {
                 "option": "Secure Shell"
