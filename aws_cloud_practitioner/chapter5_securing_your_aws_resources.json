@@ -155,31 +155,22 @@
         "answer": "Customer master key"
     },
     {
-        "question": "",
-        "answer": ""
+        "question": "Which standard governs AWS-based applications processing credit card transactions?",
+        "answer": "PCI DSS"
     },
     {
-        "question": "",
-        "answer": ""
+        "question": "What is the purpose of the Service Organization Controls (SOC) reports found on AWS Artifact?",
+        "answer": "They attest to AWS infrastructure compliance with data accountability standards like Sarbanes-Oxley."
     },
     {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answer": ""
+        "question": "What role can the documents provided by AWS Artifact play in your application planning? (TWO roles)",
+        "answers": [
+            {
+                "answer": "They can help you confirm that your deployment infrastructure is compliant with regulatory standards."
+            },
+            {
+                "answer": "They can provide insight into various regulatory and industry standards that represent best practices."
+            }
+        ]
     }
 ]    

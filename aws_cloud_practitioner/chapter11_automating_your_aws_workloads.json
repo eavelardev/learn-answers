@@ -1,0 +1,267 @@
+[
+    {
+        "question": "Which is an advantage of using CloudFormation?",
+        "answer": "It lets you create multiple separate AWS environments using a single template."
+    },
+    {
+        "question": "What formats do CloudFormation templates support? (Select TWO.)",
+        "options": [
+            {
+                "option": "XML"
+            },
+            {
+                "option": "YAML"
+            },
+            {
+                "option": "HTML"
+            },
+            {
+                "option": "JSON"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "YAML"
+            },
+            {
+                "answer": "JSON"
+            }
+        ]
+    },
+    {
+        "question": "What’s an advantage of using parameters in a CloudFormation template?",
+        "answer": "Allow customizing a stack without changing the template."
+    },
+    {
+        "question": "Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Select TWO.)",
+        "options": [
+            {
+                "option": "Resources CloudFormation creates are organized into stacks and can be managed as a single unit."
+            },
+            {
+                "option": "CloudFormation stack updates help ensure that changes to one resource won’t break another."
+            },
+            {
+                "option": "Resources created by CloudFormation always work as expected."
+            },
+            {
+                "option": "CloudFormation can provision resources faster than the AWS CLI."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Resources CloudFormation creates are organized into stacks and can be managed as a single unit."
+            },
+            {
+                "answer": "CloudFormation stack updates help ensure that changes to one resource won’t break another."
+            }
+        ]
+    },
+    {
+        "question": "What are two features of CodeCommit? (Select TWO.)",
+        "options": [
+            {
+                "option": "Versioning"
+            },
+            {
+                "option": "Automatic deployment"
+            },
+            {
+                "option": "Differencing"
+            },
+            {
+                "option": "Manual deployment"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Versioning"
+            },
+            {
+                "answer": "Differencing"
+            }
+        ]
+    },
+    {
+        "question": "In the context of CodeCommit, what can differencing accomplish?",
+        "answer": "Understanding what code change introduced a bug"
+    },
+    {
+        "question": "What software development practice regularly tests new code for bugs but doesn’t do anything else?",
+        "answer": "Continuous integration"
+    },
+    {
+        "question": "Which CodeBuild build environment compute types support Windows operating systems? (Select TWO.)",
+        "options": [
+            {
+                "option": "build.general2.large"
+            },
+            {
+                "option": "build.general1.medium"
+            },
+            {
+                "option": "build.general1.small"
+            },
+            {
+                "option": "build.general1.large"
+            },
+            {
+                "option": "build.windows1.small"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "build.general1.medium"
+            },
+            {
+                "answer": "build.general1.large"
+            }
+        ]
+    },
+    {
+        "question": "What does a CodeBuild environment always contain? (Select TWO.)",
+        "options": [
+            {
+                "option": "An operating system"
+            },
+            {
+                "option": "A Docker image"
+            },
+            {
+                "option": "The Python programming language"
+            },
+            {
+                "option": ".NET Core"
+            },
+            {
+                "option": "The PHP programming language"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "An operating system"
+            },
+            {
+                "answer": "A Docker image"
+            }
+        ]
+    },
+    {
+        "question": "Which of the following can CodeDeploy do? (Select THREE.)",
+        "options": [
+            {
+                "option": "Deploy an application to an on-premises Windows instance."
+            },
+            {
+                "option": "Deploy a Docker container to the Elastic Container Service."
+            },
+            {
+                "option": "Upgrade an application on an EC2 instance running Red Hat Enterprise Linux."
+            },
+            {
+                "option": "Deploy an application to an Android smartphone."
+            },
+            {
+                "option": "Deploy a website to an S3 bucket."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Deploy an application to an on-premises Windows instance."
+            },
+            {
+                "answer": "Deploy a Docker container to the Elastic Container Service."
+            },
+            {
+                "answer": "Upgrade an application on an EC2 instance running Red Hat Enterprise Linux."
+            }
+        ]
+    },
+    {
+        "question": "What is the minimum number of actions in a CodePipeline pipeline?",
+        "answer": "2",
+        "note": "At the very least, a CodePipeline must consist of a source stage and a deploy stage."
+    },
+    {
+        "question": "You want to predefine the configuration of EC2 instances that you plan to launch manually and using Auto Scaling. What resource must you use?",
+        "answer": "Launch template"
+    },
+    {
+        "question": "What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Select TWO.)",
+        "options": [
+            {
+                "option": "Maximum"
+            },
+            {
+                "option": "Group size"
+            },
+            {
+                "option": "Desired capacity"
+            },
+            {
+                "option": "Minimum"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Maximum"
+            },
+            {
+                "answer": "Minimum"
+            }
+        ]
+    },
+    {
+        "question": "An Auto Scaling group has a desired capacity of 7 and a maximum size of 7. What will Auto Scaling do if someone manually terminates one of these instances?",
+        "answer": "It will launch one new instance."
+    },
+    {
+        "question": "What Auto Scaling feature creates a scaling schedule based on past usage patterns?",
+        "answer": "Predictive scaling"
+    },
+    {
+        "question": "What type of AWS Systems Manager document can run Bash or PowerShell scripts on an EC2 instance?",
+        "answer": "Command document"
+    },
+    {
+        "question": "What type of AWS Systems Manager document can take a snapshot of an EC2 instance?",
+        "answer": "Automation document"
+    },
+    {
+        "question": "Which OpsWorks service uses Chef recipes?",
+        "answer": "AWS OpsWorks Stacks"
+    },
+    {
+        "question": "What configuration management platforms does OpsWorks support? (Select TWO.)",
+        "options": [
+            {
+                "option": "SaltStack"
+            },
+            {
+                "option": "Puppet Enterprise"
+            },
+            {
+                "option": "CFEngine"
+            },
+            {
+                "option": "Chef"
+            },
+            {
+                "option": "Ansible"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Puppet Enterprise"
+            },
+            {
+                "answer": "Chef"
+            }
+        ]
+    },
+    {
+        "question": "Which OpsWorks Stacks layer contains at least one EC2 instance?",
+        "answer": "OpsWorks layer",
+        "complement": "Only an OpsWorks layer contains at least one EC2 instance. There’s no such thing as an EC2 Auto Scaling layer."
+    }
+]

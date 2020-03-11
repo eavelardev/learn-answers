@@ -1,0 +1,293 @@
+[
+    {
+        "question": "Which of the following credentials can you use to log into the AWS Management Console?",
+        "answer": "Identity and Access Management (IAM) username"
+    },
+    {
+        "question": "How long will your session with the AWS Management Console remain active?",
+        "answer": "12 hours"
+    },
+    {
+        "question": "While looking at the EC2 service console in the AWS Management Console while logged in as the root user, you notice all of your instances are missing. What could be the reason?",
+        "answer": "You’ve selected the wrong region in the navigation bar."
+    },
+    {
+        "question": "Which of the following is true regarding a resource tag?",
+        "answer": "It must have a key."
+    },
+    {
+        "question": "Which of the following is required to use the AWS Command Line Interface (CLI)?",
+        "answer": "A secret key"
+    },
+    {
+        "question": "Which of the following are options for installing the AWS CLI on Windows 10? (Select TWO.)",
+        "answers": [
+            {
+                "answer": "The MSI installer"
+            },
+            {
+                "answer": "Using Python and pip"
+            }
+        ]
+    },
+    {
+        "question": "After installing the AWS Command Line Interface, what should you do before using it to securely manage your AWS resources?",
+        "answer": "Issue the aws configure command."
+    },
+    {
+        "question": "Which output format does the AWS CLI support?",
+        "answer": "JavaScript object notation (JSON)"
+    },
+    {
+        "question": "Which of the following programming languages are AWS software development kits available for? (Select THREE.)",
+        "options": [
+            {
+                "option": "Fortran"
+            },
+            {
+                "option": "JavaScript"
+            },
+            {
+                "option": "JSON"
+            },
+            {
+                "option": "Java"
+            },
+            {
+                "option": "PHP"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "JavaScript"
+            },
+            {
+                "answer": "Java"
+            },
+            {
+                "answer": "PHP"
+            }
+        ]
+    },
+    {
+        "question": "Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Select TWO.)",
+        "options": [
+            {
+                "option": "AWS Mobile SDK for Unity"
+            },
+            {
+                "option": "AWS Mobile SDK for .NET and Xamarin"
+            },
+            {
+                "option": "AWS SDK for Go"
+            },
+            {
+                "option": "AWS Mobile SDK for iOS"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "AWS Mobile SDK for Unity"
+            },
+            {
+                "answer": "AWS Mobile SDK for .NET and Xamarin"
+            }
+        ]
+    },
+    {
+        "question": "Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Select TWO.)",
+        "options": [
+            {
+                "option": "JavaScript"
+            },
+            {
+                "option": "C++"
+            },
+            {
+                "option": "Swift"
+            },
+            {
+                "option": "Ruby"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "JavaScript"
+            },
+            {
+                "answer": "C++"
+            }
+        ]
+    },
+    {
+        "question": "What’s the difference between the AWS Command Line Interface (CLI) and the AWS software development kits (SDK)? (Select TWO.)",
+        "options": [
+            {
+                "option": "The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services."
+            },
+            {
+                "option": "The AWS CLI allows you to interact with AWS services from a terminal."
+            },
+            {
+                "option": "The AWS SDKs allow you to interact with AWS services from a terminal."
+            },
+            {
+                "option": "The AWS CLI allows you to use popular programming languages to write applications that interact with AWS services."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services."
+            },
+            {
+                "answer": "The AWS CLI allows you to interact with AWS services from a terminal."
+            }
+        ]
+    },
+    {
+        "question": "Which CloudWatch feature store performance data from AWS services?",
+        "answer": "Metrics"
+    },
+    {
+        "question": "For which of the following scenarios can you create a CloudWatch alarm to send a notification?",
+        "options": [
+            {
+                "option": "A metric that doesn’t change for 24 hours."
+            },
+            {
+                "option": "Termination of an EC2 instance"
+            },
+            {
+                "option": "The presence of a specific IP address in a web server log"
+            },
+            {
+                "option": "A metric that exceeds a given threshold"
+            }
+        ],
+        "answers": "A metric that exceeds a given threshold"
+    },
+    {
+        "question": "Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Select TWO.)",
+        "options": [
+            {
+                "option": "Short Message Service (SMS) text message"
+            },
+            {
+                "option": "CloudWatch Events"
+            },
+            {
+                "option": "Simple Queue Service (SQS)"
+            },
+            {
+                "option": "Mobile pull notification"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Short Message Service (SMS) text message"
+            },
+            {
+                "answer": "Simple Queue Service (SQS)"
+            }
+        ]
+    },
+    {
+        "question": "Which of the following are true regarding CloudWatch Events? (Select TWO.)",
+        "options": [
+            {
+                "option": "It can reboot an EC2 instance when an error appears in a log file."
+            },
+            {
+                "option": "It can send an SNS notification when an EC2 instance’s CPU utilization exceeds 90%."
+            },
+            {
+                "option": "It can send an SNS notification when an IAM user logs in to the AWS Management Console."
+            },
+            {
+                "option": "It can shut down an EC2 instance at a specific time."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "It can send an SNS notification when an IAM user logs in to the AWS Management Console."
+            },
+            {
+                "answer": "It can shut down an EC2 instance at a specific time."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following trigger an API action? (Select TWO.)",
+        "options": [
+            {
+                "option": "Configuring the AWS Command Line Interface (CLI)"
+            },
+            {
+                "option": "Viewing an S3 bucket from the AWS Management Console"
+            },
+            {
+                "option": "Logging into the AWS Management Console"
+            },
+            {
+                "option": "Listing IAM users from the AWS Command Line Interface (CLI)"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Viewing an S3 bucket from the AWS Management Console"
+            },
+            {
+                "answer": "Listing IAM users from the AWS Command Line Interface (CLI)"
+            }
+        ]
+    },
+    {
+        "question": "What’s the most cost-effective way to view and search only the last 60 days of management API events on your AWS account?",
+        "answer": "Use CloudTrail event history."
+    },
+    {
+        "question": "You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What’s the most cost-effective way to do this? (Select TWO.)",
+        "options": [
+            {
+                "option": "Stream CloudTrail logs to CloudWatch Logs."
+            },
+            {
+                "option": "Use CloudTrail event history."
+            },
+            {
+                "option": "Enable CloudTrail logging of global service events."
+            },
+            {
+                "option": "Create a trail to log S3 data events."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Stream CloudTrail logs to CloudWatch Logs."
+            },
+            {
+                "answer": "Create a trail to log S3 data events."
+            }
+        ]
+    },
+    {
+        "question": "What is a benefit of using CloudTrail log file integrity validation?",
+        "answer": "It lets you assert that no CloudTrail log files have been deleted from S3."
+    },
+    {
+        "question": "Which Cost Explorer report type can show you the monthly costs for your reserved EC2 instances?",
+        "answer": "Costs and usage reports"
+    },
+    {
+        "question": "Which service allow you to purchase reserved instances to save money?",
+        "answer": "Amazon Relational Database Service (RDS)"
+    },
+    {
+        "question": "Which Cost Explorer report shows the amount of money you’ve saved using reserved instances?",
+        "answer": "Reservation Utilization"
+    },
+    {
+        "question": "You’ve been running several Elasticsearch instances continuously for the past three months. You check the reserved instance recommendations in Cost Explorer but see no recommendations. What could be a reason for this?",
+        "answer": "Your instances are already covered by reservations."
+    }
+]

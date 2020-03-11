@@ -1,0 +1,253 @@
+[
+    {
+        "question" : "Which of the following are true of a default VPC? (Select TWO.)",
+        "options": [
+            {
+                "option": "A default VPC spans multiple regions."
+            },
+            {
+                "option": "AWS creates a default VPC in each region."
+            },
+            {
+                "option": "AWS creates a default VPC in each Availability Zone."
+            },
+            {
+                "option": "By default, each default VPC is available to one AWS account."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "AWS creates a default VPC in each region."
+            },
+            {
+                "answer": "By default, each default VPC is available to one AWS account."
+            }
+        ]
+    },
+    {
+        "question" : "Which of the following is a valid CIDR for a VPC or subnet?",
+        "options": [
+            {
+                "option": "10.0.0.0/28"
+            },
+            {
+                "option": "10.0.0.0/29"
+            },
+            {
+                "option": "10.0.0.0/8"
+            },
+            {
+                "option": "10.0.0.0/15"
+            }
+        ],
+        "answer" : "10.0.0.0/28"
+    },
+    {
+        "question" : "Which of the following are true regarding subnets? (Select TWO.)",
+        "options": [
+            {
+                "option": "A VPC must have at least two subnets."
+            },
+            {
+                "option": "A subnet must have a CIDR that’s a subset of the CIDR of the VPC in which it resides."
+            },
+            {
+                "option": "A subnet spans one Availability Zone."
+            },
+            {
+                "option": "A subnet spans multiple Availability Zones."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "A subnet must have a CIDR that’s a subset of the CIDR of the VPC in which it resides."
+            },
+            {
+                "answer": "A subnet spans one Availability Zone."
+            }
+        ]
+    },
+    {
+        "question" : "Which of the following is true of a new security group?",
+        "options": [
+            {
+                "option": "It contains an inbound rule denying access from public IP addresses."
+            },
+            {
+                "option": "It contains an outbound rule denying access to public IP addresses."
+            },
+            {
+                "option": "It contains an outbound rule allowing access to any IP address."
+            },
+            {
+                "option": "It contains an inbound rule allowing access from any IP address."
+            },
+            {
+                "option": "It contains an inbound rule denying access from any IP address."
+            }
+        ],
+        "answer" : "It contains an outbound rule allowing access to any IP address."
+    },
+    {
+        "question" : "What’s the difference between a security group and a network access control list (NACL)? (Select TWO.)",
+        "options": [
+            {
+                "option": "A network access control list operates at the instance level."
+            },
+            {
+                "option": "A security group operates at the instance level."
+            },
+            {
+                "option": "A security group operates at the subnet level."
+            },
+            {
+                "option": "A network access control list operates at the subnet level."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "A security group operates at the instance level."
+            },
+            {
+                "answer": "A network access control list operates at the subnet level."
+            }
+        ]
+    },
+    {
+        "question" : "Which of the following is true of a VPC peering connection?",
+        "options": [
+            {
+                "option": "It’s a private connection that connects more than three VPCs."
+            },
+            {
+                "option": "It’s a private connection between two VPCs."
+            },
+            {
+                "option": "It’s a public connection between two VPCs."
+            },
+            {
+                "option": "It’s a virtual private network (VPN) connection between two VPCs."
+            }
+        ],
+        "answer" : "It’s a private connection between two VPCs."
+    },
+    {
+        "question" : "What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Select TWO.)",
+        "options": [
+            {
+                "option": "A Direct Connect connection offers predictable latency because it doesn’t traverse the internet."
+            },
+            {
+                "option": "A VPN connection uses the internet for transport."
+            },
+            {
+                "option": "A Direct Connect connection uses AES 128- or 256-bit encryption."
+            },
+            {
+                "option": "A VPN connection requires proprietary hardware."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "A Direct Connect connection offers predictable latency because it doesn’t traverse the internet."
+            },
+            {
+                "answer": "A VPN connection uses the internet for transport."
+            }
+        ]
+    },
+    {
+        "question" : "Which of the following are true about registering a domain name with Route 53? (Select TWO.)",
+        "options": [
+            {
+                "option": "The registrar you use to register a domain name determines who will host DNS for that domain."
+            },
+            {
+                "option": "You can register a domain name for a term of up to 10 years."
+            },
+            {
+                "option": "Route 53 creates a private hosted zone for the domain."
+            },
+            {
+                "option": "Route 53 creates a public hosted zone for the domain."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "You can register a domain name for a term of up to 10 years."
+            },
+            {
+                "answer": "Route 53 creates a public hosted zone for the domain."
+            }
+        ]
+    },
+    {
+        "question" : "Which Route 53 routing policies can return set of randomly ordered values?",
+        "answer" : "Multivalue Answer"
+    },
+    {
+        "question" : "Which Route 53 routing policie doesn’t use health checks?",
+        "answer" : "Simple"
+    },
+    {
+        "question" : "Which type of Route 53 health checks works by making a test connection to a TCP port?",
+        "answer" : "Endpoint"
+    },
+    {
+        "question" : "You have two EC2 instances hosting a web application. You want to distribute 20 percent of traffic to one instance and 80 percent to the other. Which Route 53 routing policie should you use?",
+        "answer" : "Weighted"
+    },
+    {
+        "question" : "Resources in a VPC need to be able to resolve internal IP addresses for other resources in the VPC. No one outside of the VPC should be able to resolve these addresses. Which of the following Route 53 resources can help you achieve this?",
+        "answer" : "A private hosted zone"
+    },
+    {
+        "question" : "You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?",
+        "answer" : "1"
+    },
+    {
+        "question" : "On how many continents are CloudFront edge locations distributed?",
+        "answer" : "6"
+    },
+    {
+        "question" : "From where does CloudFront retrieve content to store for caching?",
+        "answer" : "Origins"
+    },
+    {
+        "question" : "Which CloudFront distribution type requires you to provide a media player?",
+        "answer" : "RTMP"
+    },
+    {
+        "question" : "You need to deliver content to users in the United States and Canada. Which of the following edge location options will be the most cost effective for your CloudFront distribution?",
+        "answer" : "United States, Canada, and Europe"
+    },
+    {
+        "question" : "Approximately how many different CloudFront edge locations are there?",
+        "answer" : "More than 150"
+    },
+    {
+        "question" : "Which of the following are valid origins for a CloudFront distribution? (Select TWO.)",
+        "options": [
+            {
+                "option": "EC2 instance"
+            },
+            {
+                "option": "A public S3 bucket"
+            },
+            {
+                "option": "A private S3 bucket that you don’t have access to"
+            },
+            {
+                "option": "A private S3 bucket that you own"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "EC2 instance"
+            },
+            {
+                "answer": "A public S3 bucket"
+            }
+        ]
+    }
+]

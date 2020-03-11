@@ -19,8 +19,8 @@ def main():
                         action='store_true',
                         help='Ask questions forever. Ctrl+c to exit')
 
-    # args = parser.parse_args()
-    args = parser.parse_args(['-f', 'test.json'])
+    args = parser.parse_args()
+    # args = parser.parse_args(['-f', 'test.json'])
     f = args.file
     data = json.load(f)
     f.close()
@@ -29,7 +29,8 @@ def main():
 
     skip_question = 0
     pass_question = 1
-    quiz_complete = 2
+    pass_answer = 2
+    quiz_complete = 3
 
     def get_word():
         word = ''
@@ -40,99 +41,99 @@ def main():
             if ch.isprintable():
                 word += ch
 
-    def analyze_answers(answers, note):
-        pass_answers = True
-        for a, answer in enumerate(answers):
-            answer_words = answer.split()
-            if len(answers) > 1:
-                win.addstr(str(a+1) + ". ")
+    def analyze_answer(answer, note):
+        # pass_answers = True
+        # for a, answer in enumerate(answers):
+        answer_words = answer.split()
+        in_word, state = get_word()
+
+        if state == '\n':
+            if len(in_word) == 0:
+                return skip_question
+            elif len(answer_words) > 1:
+                return
+
+        pass_answer = None
+        # restart_question = False
+        total_chrs = 0
+        last_x = 0
+
+        for i in range(len(answer_words)):
+            if i == len(answer_words) - 1:
+                if in_word.endswith('.') and not answer_words[i].endswith('.'):
+                    in_word = in_word[:-1]
+                if not in_word.endswith('.') and answer_words[i].endswith('.'):
+                    in_word += '.'
+
+            if in_word != answer_words[i]:
+                win.addstr('\n')
+                while True:
+                    if pass_answer is None:
+                        for j in range(len(answer_words)):
+                            if j == i:
+                                win.addstr(
+                                    answer_words[j], curses.A_STANDOUT)
+                            else:
+                                win.addstr(
+                                    answer_words[j], curses.A_UNDERLINE)
+
+                            if j != len(answer_words) - 1:
+                                win.addstr(' ', curses.A_UNDERLINE)
+
+                        win.addstr('\n')
+                        if note:
+                            win.addstr(note + '\n\n', curses.A_DIM)
+                        pass_answer = False
+                        pass_answers = False
+                    else:
+                        win.addstr(' ' * (total_chrs % ncols))
+                        win.addstr(
+                            answer_words[i] + '\n', curses.A_STANDOUT)
+
+                    win.addstr(answer[total_chrs - last_x: total_chrs])
+
+                    last_y, last_x = win.getyx()
+                    if last_y > nlines - 3:
+                        return
+                        # return restart_question 
+                        # break
+
+                    in_word, state = get_word()
+                    if state == '\n':
+                        return
+                        # return restart_question
+                        # break
+
+                    if in_word == answer_words[i]:
+                        break
+                    else:
+                        win.addstr('\n')
+
+            total_chrs += len(answer_words[i])
+            if i < len(answer_words) - 1:
+                total_chrs += 1
+
+            if pass_answer is None and i == len(answer_words) - 1:
+                # win.addstr('\n')
+                return pass_answer
+                # break
+
+            if i == len(answer_words) - 1:
+                return
+
+            last_y, last_x = win.getyx()
+            if last_y > nlines - 3:
+                return
             in_word, state = get_word()
 
-            if state == '\n':
-                if len(in_word) == 0:
-                    return skip_question
-                elif len(answer_words) > 1:
-                    continue
+            if state == '\n' and i < len(answer_words) - 2:
+                return
 
-            pass_answer = None
-            restart_question = False
-            total_chrs = 0
-            last_x = 0
+            # if not pass_answer:
+            #     break
 
-            for i in range(len(answer_words)):
-                if i == len(answer_words) - 1:
-                    if in_word.endswith('.') and not answer_words[i].endswith('.'):
-                        in_word = in_word[:-1]
-                    if not in_word.endswith('.') and answer_words[i].endswith('.'):
-                        in_word += '.'
-
-                if in_word != answer_words[i]:
-                    win.addstr('\n')
-                    while True:
-                        if pass_answer is None:
-                            for j in range(len(answer_words)):
-                                if j == i:
-                                    win.addstr(
-                                        answer_words[j], curses.A_STANDOUT)
-                                else:
-                                    win.addstr(
-                                        answer_words[j], curses.A_UNDERLINE)
-
-                                if j != len(answer_words) - 1:
-                                    win.addstr(' ', curses.A_UNDERLINE)
-
-                            win.addstr('\n')
-                            if note:
-                                win.addstr(note + '\n\n', curses.A_DIM)
-                            pass_answer = False
-                            pass_answers = False
-                        else:
-                            win.addstr(' ' * (total_chrs % ncols))
-                            win.addstr(
-                                answer_words[i] + '\n', curses.A_STANDOUT)
-
-                        win.addstr(answer[total_chrs - last_x: total_chrs])
-
-                        last_y, last_x = win.getyx()
-                        if last_y > nlines - 3:
-                            restart_question = True
-                            break
-
-                        in_word, state = get_word()
-                        if state == '\n':
-                            restart_question = True
-                            break
-
-                        if in_word == answer_words[i]:
-                            break
-                        else:
-                            win.addstr('\n')
-
-                total_chrs += len(answer_words[i])
-                if i < len(answer_words) - 1:
-                    total_chrs += 1
-
-                if pass_answer is None and i == len(answer_words) - 1:
-                    win.addstr('\n')
-                    pass_answer = True
-                    break
-
-                if i == len(answer_words) - 1 or restart_question:
-                    break
-
-                last_y, last_x = win.getyx()
-                if last_y > nlines - 3:
-                    break
-                in_word, state = get_word()
-
-                if state == '\n' and i < len(answer_words) - 2:
-                    break
-
-            if not pass_answer:
-                break
-
-        if pass_answers:
-            return pass_question
+        # if pass_answers:
+        #     return pass_question
 
     while True:
         if args.random and len(data) > 1:
@@ -143,28 +144,43 @@ def main():
                     break
 
         for q, question in enumerate(data):
+            answers = question.get('answer')
+            if answers is None:
+                answers = [answer.get('answer') for answer in question.get('answers')]
+            else:
+                answers = [answers]
+
+            options = question.get('options')
+            if options is not None:
+                if len(answers) == 1: # print opts randomly when there is one answer
+                    random.shuffle(options) 
+
+            note = question.get('note')
+
+            pass_answers = False
+            i_answer = 0
+
             while True:
                 win.clear()
                 if not args.random:
-                    win.addstr(str(q+1) + '. ') # add num question
-                win.addstr(question.get('question') + '\n\n', curses.A_BOLD)
+                    win.addstr(str(q+1) + '. ', curses.A_BOLD) # add num question
+                win.addstr(question.get('question') + '\n', curses.A_BOLD)
 
-                answers = question.get('answer')
-                if answers is None:
-                    answers = [answer.get('answer') for answer in question.get('answers')]
-                else:
-                    answers = [answers]
-
-                options = question.get('options')
                 if options is not None:
-                    if len(answers) == 1: # print opts randomly when there is one answer
-                        random.shuffle(options) 
                     for option in options:
                         win.addstr('    • ' + option.get('option') + '\n')
                     win.addstr('\n')
 
-                note = question.get('note')
-                answer_result = analyze_answers(answers, note)
+                if len(answers) > 1:
+                    win.addstr(str(i_answer+1) + ". ")
+
+                answer_result = analyze_answer(answers[i_answer], note)
+
+                if answer_result == pass_answer:
+                    if i_answer == len(answers) - 1:
+                        break
+                    else:
+                        i_answer += 1
 
                 if answer_result == skip_question or answer_result == pass_question:
                     break

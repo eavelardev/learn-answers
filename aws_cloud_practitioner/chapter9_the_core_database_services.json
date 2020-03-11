@@ -1,0 +1,199 @@
+[
+    {
+        "question": "Which type of database stores data in columns and rows?",
+        "answer" : "Relational"
+    },
+    {
+        "question" : "Which of the following Structured Query Language (SQL) statements can you use to write data to a relational database table?",
+        "answer": "INSERT"
+    },
+    {
+        "question" : "Which of the following statements is true regarding nonrelational databases?",
+        "answer": "You don’t have to define all the types of data that a table can store before adding data to it."
+    },
+    {
+        "question" : "What is a no-SQL database?",
+        "answer": "A schemaless nonrelational database"
+    },
+    {
+        "question" : "What do new Relational Database Service (RDS) instances use for database storage?",
+        "answer": "Elastic Block Store (EBS) volumes"
+    },
+    {
+        "question" : "Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Select TWO.)",
+        "options": [
+            {
+                "option": "IBM dBase"
+            },
+            {
+                "option": "PostgreSQL"
+            },
+            {
+                "option": "DynamoDB"
+            },
+            {
+                "option": "Amazon Aurora"
+            },
+            {
+                "option": "Redis"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "PostgreSQL"
+            },
+            {
+                "answer": "Amazon Aurora"
+            }
+        ]
+    },
+    {
+        "question" : "What two databases is Amazon Aurora compatible with? (Select TWO.)",
+        "options": [
+            {
+                "option": "MySQL"
+            },
+            {
+                "option": "PostgreSQL"
+            },
+            {
+                "option": "MariaDB"
+            },
+            {
+                "option": "Oracle"
+            },
+            {
+                "option": "Microsoft SQL Server"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "MySQL"
+            },
+            {
+                "answer": "PostgreSQL"
+            }
+        ]
+    },
+    {
+        "question" : "Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an Availability Zone failure? (Select TWO.)",
+        "options": [
+            {
+                "option": "Read replicas"
+            },
+            {
+                "option": "Multi-AZ"
+            },
+            {
+                "option": "Snapshots"
+            },
+            {
+                "option": "IOPS"
+            },
+            {
+                "option": "Vertical scaling"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Multi-AZ"
+            },
+            {
+                "answer": "Snapshots"
+            }
+        ]
+    },
+    {
+        "question" : "Which RDS database engine offers automatically expanding database storage up to 64 TB?",
+        "answer": "Amazon Aurora"
+    },
+    {
+        "question" : "Which Relational Database Service (RDS) features can help you achieve a monthly availability of 99.95 percent?",
+        "answer": "Multi-AZ"
+    },
+    {
+        "question" : "What is true regarding a DynamoDB partition? (Select TWO.)",
+        "options": [
+            {
+                "option": "It’s stored within a table."
+            },
+            {
+                "option": "It’s backed by solid-state drives."
+            },
+            {
+                "option": "It’s a way to uniquely identify an item in a table."
+            },
+            {
+                "option": "It’s replicated across multiple Availability Zones."
+            }
+        ],
+        "answers": [
+            {
+                "answer": "It’s backed by solid-state drives."
+            },
+            {
+                "answer": "It’s replicated across multiple Availability Zones."
+            }
+        ]
+    },
+    {
+        "question" : "What is the minimum monthly availability for DynamoDB in a single region?",
+        "answer": "99.99 percent"
+    },
+    {
+        "question" : "Which of the following statements is true regarding a DynamoDB table?",
+        "answer": "Items in a table don’t have to have all the same attributes."
+    },
+    {
+        "question" : "Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Select TWO.)",
+        "options": [
+            {
+                "option": "Decrease read capacity units (RCU)"
+            },
+            {
+                "option": "Increase read capacity units"
+            },
+            {
+                "option": "Increase write capacity units (WCU)"
+            },
+            {
+                "option": "Decrease write capacity units"
+            },
+            {
+                "option": "Enable DynamoDB Auto Scaling"
+            }
+        ],
+        "answers": [
+            {
+                "answer": "Increase write capacity units (WCU)"
+            },
+            {
+                "answer": "Enable DynamoDB Auto Scaling"
+            }
+        ]
+    },
+    {
+        "question" : "Which DynamoDB operation is the most read-intensive?",
+        "answer": "Scan"
+    },
+    {
+        "question" : "Which would be appropriate to use for a primary key in a DynamoDB table that stores a customer list?",
+        "answer": "A randomly generated customer ID number"
+    },
+    {
+        "question" : "Which type of Redshift node uses magnetic storage?",
+        "answer": "Dense compute"
+    },
+    {
+        "question" : "Which Redshift feature can analyze structured data stored in S3?",
+        "answer": "Redshift Spectrum"
+    },
+    {
+        "question" : "What is the term for a relational database that stores large amounts of structured data from a variety of sources for reporting and analysis?",
+        "answer": "Data warehouse"
+    },
+    {
+        "question" : "What’s the maximum amount of data you can store in a Redshift cluster when using dense storage nodes?",
+        "answer": "2 PB"
+    }
+]
