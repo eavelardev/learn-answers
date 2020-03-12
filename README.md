@@ -5,6 +5,8 @@ I think that one of the best ways to learn new things is through repetition, for
 
 ![](/imgs/app.png)
 
+Windows is not supported, only macOS and Linux.
+
 ## Using
 
 ```
