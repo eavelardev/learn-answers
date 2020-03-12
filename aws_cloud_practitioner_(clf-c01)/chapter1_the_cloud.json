@@ -1,6 +1,6 @@
 [
     {
-        "question": "Which does not contribute significantly to the operational value of a large cloud provider like AWS?",
+        "question": "Which of the following does not contribute significantly to the operational value of a large cloud provider like AWS?",
         "options" : [
             {
                 "option" : "Multiregional presence"
