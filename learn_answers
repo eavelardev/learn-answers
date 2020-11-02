@@ -62,11 +62,10 @@ def main():
         last_x = 0
 
         for i in range(len(answer_words)):
-            if i == len(answer_words) - 1:
-                if in_word.endswith('.') and not answer_words[i].endswith('.'):
-                    in_word = in_word[:-1]
-                if not in_word.endswith('.') and answer_words[i].endswith('.'):
-                    in_word += '.'
+            if in_word.endswith('.') and not answer_words[i].endswith('.'):
+                in_word = in_word[:-1]
+            if not in_word.endswith(('.', ',')) and answer_words[i].endswith(('.', ',')):
+                in_word += answer_words[i][-1]
 
             if in_word != answer_words[i]:
                 win.addstr('\n')

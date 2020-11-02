@@ -1,0 +1,126 @@
+[
+    {
+        "question": "speak",
+        "answer": "spoken"
+    },
+    {
+        "question": "eat",
+        "answer": "eaten"
+    },
+    {
+        "question": "grow",
+        "answer": "grown"
+    },
+    {
+        "question": "make",
+        "answer": "made"
+    },
+    {
+        "question": "wear",
+        "answer": "worn"
+    },
+    {
+        "question": "drink",
+        "answer": "drunk"
+    },
+    {
+        "question": "do",
+        "answer": "done"
+    },
+    {
+        "question": "sell",
+        "answer": "sold"
+    },
+    {
+        "question": "know",
+        "answer": "known"
+    },
+    {
+        "question": "steal",
+        "answer": "stolen"
+    },
+    {
+        "question": "give",
+        "answer": "given"
+    },
+    {
+        "question": "write",
+        "answer": "written"
+    },
+    {
+        "question": "hold",
+        "answer": "held"
+    },
+    {
+        "question": "pay",
+        "answer": "paid"
+    },
+    {
+        "question": "teach",
+        "answer": "taught"
+    },
+    {
+        "question": "read",
+        "answer": "read"
+    },
+    {
+        "question": "sing",
+        "answer": "sung"
+    },
+    {
+        "question": "begin",
+        "answer": "begun"
+    },
+    {
+        "question": "bite",
+        "answer": "bitten"
+    },
+    {
+        "question": "break",
+        "answer": "broken"
+    },
+    {
+        "question": "bring",
+        "answer": "brought"
+    },
+    {
+        "question": "catch",
+        "answer": "caught"
+    },
+    {
+        "question": "choose",
+        "answer": "chosen"
+    },
+    {
+        "question": "freeze",
+        "answer": "frozen"
+    },
+    {
+        "question": "keep",
+        "answer": "kept"
+    },
+    {
+        "question": "ride",
+        "answer": "ridden"
+    },
+    {
+        "question": "see",
+        "answer": "seen"
+    },
+    {
+        "question": "show",
+        "answer": "shown"
+    },
+    {
+        "question": "take",
+        "answer": "taken"
+    },
+    {
+        "question": "put",
+        "answer": "put"
+    },
+    {
+        "question": "find",
+        "answer": "found"
+    }
+]
